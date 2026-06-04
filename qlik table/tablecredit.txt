@@ -1,0 +1,823 @@
+dt_fonc
+id_cli
+stt_cli
+num_prj
+nb_pret_proj
+num_cnt
+num_tec
+num_cnt_cc
+cnt_ctl
+lib_ctl
+fam_pdt
+perimetre
+stt_cnt
+cd_etat_prt
+typ_remb
+typ_prt
+cd_bnq
+agc_cnt
+gct_dom
+gct_inst
+typ_mar
+top_el
+typ_app
+id_app
+nom_app
+mnt_nom
+mnt_dblq
+mnt_nom_proj
+mnt_dblq_proj
+mnt_disp
+enc_cpt
+enc_cpt_moy_m
+enc_gest
+enc_gest_n1
+mnt_init_caution
+mnt_krd_tot
+mnt_krd_sain
+mnt_krd_imp
+mnt_ifa_tot
+mnt_ifa_sain
+mnt_ifa_imp
+mnt_ifa_ret
+tx_int_ref
+tx_int_ini
+tx_int_act
+teg
+ori_tci
+tci
+fwd
+tci_qrm
+DATE FONCTIONNELLE
+Date à laquelle les données sont arrêtées
+Les données sont arrêtées fin du mois.
+1
+IDENTIFIANT CLIENT
+Identifiant client
+2
+STATUT CLIENT
+Statut du client (COE: coemprunteur, EMP: emprunteur, etc.)
+3
+NUMERO PROJET
+Numéro contrat souscrit du projet de financement. Un projet de financement peut contenir un ou plusieurs prêts dans les applications d'instruction.
+4
+NOMBRE DE CONTRAT SOUSCRIT
+Nombre de contrat souscrit
+5
+NUMERO DE CONTRAT SOUSCRIT
+Identifiant unique alphanumérique du contrat souscrit.
+6
+NUMERO CONTRAT TECHNIQUE
+7
+NUMERO CONTRAT SOUSCRIT COMPTE
+Numéro du contrat souscrit du compte à vue associé à l'autorisation de découvert.
+8
+CONTRAT CATALOGUE
+Numéro permettant d'associer un contrat souscrit au type exact de contrat auquel il fait référence.
+9
+LIBELLE CONTRAT CATALOGUE
+Libellé du contrat catalogue
+10
+FAMILLE PRODUIT
+L'affiliation du produit à une famille de produit (ex: comptes courants, crédits immobiliers, épargne assurance, etc.)
+11
+PERIMETRE
+Périmètre du contrat, déterminé sur la base du contrat catalogue (ex: credit)
+12
+STATUT CONTRAT
+Code indiquant dans quel état est le contrat (ex : 0 = Normal, 8 = Contentieux, 9 = Clos)
+13
+CODE ETAT DU PRET
+Code état du prêt, situation du prêt (ex : 10 = en franchise fictive ; 16 = en remboursement ; 99 = clôturé)
+14
+TYPE REMBOURSEMENT
+C'est le type de remboursement. Lorsque le nombre de termes accordé est 1 alors le champs sera renseigné "In Fine", sinon il sera renseigné "Amort"
+15
+TYPE DE PRET
+Type de prêt. Il correspond à un contrat catalogue. (lien entre le type de prêt et le contrat catalogue dans la table T5AGE10)
+16
+CODE BANQUE PRETEUSE
+Code de la banque prêteuse
+17
+AGENCE INSTRUCTION
+Caisse où a été instruit le prêt. La phase d'instruction concerne les étapes avant le passage en gestion.
+18
+CAISSE DOMICILIATION
+Caisse de domiciliation des échéances (caisse sur laquelle sont prélevées les échéances du prêt).
+19
+CODE GUICHET PRETEUR
+Code du guichet prêteur
+20
+TYPE DE MARCHE
+Code technique qui permet de connaître le type de marché du prêt (ex: 01 = LOGEMENT ; 02 = EQ.FAMILIAL; 03 = PROFESSIONNEL; 04 = COLLECTIVITES)
+21
+CODE EPARGNE LOGEMENT
+Donnée indiquant si le prêt est un prêt Epargne Logement (PEL) ou un prêt compte Epargne Logement (CEL) (code booléen, 0 =non; 1 = oui)
+22
+TYPE D'APPORTEUR
+Type de l'apporteur si le prêt a été souscrit grâce à un apporteur d'affaire (ex: 01 = notaire; 02 = agent immobilier; 03 = promoteur immobilier; 04 = comite d'entreprise; 30 = tresor public)
+23
+IDENTIFIANT APPORTEUR
+Identifiant de l'apporteur
+24
+NOM APPORTEUR
+Nom de l'apporteur
+25
+MONTANT DU NOMINAL
+C'est le montant contractuel du prêt signé entre la banque et le client. A distinguer du montant débloqué ou réalisé.
+26
+MONTANT DEBLOQUE
+Somme des montants débloqués ou mis à disposition de l'emprunteur (Ce montant représente une partie ou la totalité montant nominal (CPR001))
+27
+MONTANT NOMINAL PROJET FINANCEMENT
+C'est la somme des montants nominaux du projet de financement d'un emprunteur
+28
+MONTANT DEBLOQUE PROJET FINANCEMENT
+C'est la somme des montants débloqués du projet de financement d'un emprunteur
+29
+MONTANT DISPONIBLE
+Montant de capital restant à débloquer (montant de Hors-Bilan).
+30
+ENCOURS COMPTABLE
+Montant du capital restant dû
+31
+ENCOURS COMPTABLE MOYEN DU MOIS
+Encours comptable moyen du mois
+32
+ENCOURS GESTION
+Montant du capital restant dû y compris les intérêts
+33
+ENCOURS DE GESTION DE L'ANNEE DERNIERE
+34
+MONTANT INITIAL CAUTION
+Montant de la caution à sa création.
+35
+MONTANT CAPITAL RESTANT DU TOTAL
+C'est le montant du capital restant dû sain + le montant du capital restant dû impayé (mnt_krd_sain + mnt_krd_imp)
+36
+MONTANT CAPITAL RESTANT DÛ SAIN
+C'est la somme totale du capital restant dû sain, c’est-à-dire le stock du capital et des intérêts restant à solder par l'emprunteur.
+37
+MONTANT CAPITAL RESTANT IMPAYE
+C'est la somme totale du capital restant dû impayé, c’est-à-dire le stock du capital restant à solder par l'emprunteur hors intérêts.
+38
+MONTANT INTERETS TOTAL
+mnt_ifa_sain + mnt_ifa_imp + mnt_ifa_ret
+39
+MONTANT INTERETS SAIN
+C'est la somme des intérêts sain comprenant aussi l'assurance invalidité décés et perte d'emploi
+40
+MONTANT INTERETS IMPAYES
+C'est la somme des intérêts impayés
+41
+MONTANT INDEMNITES EXIGIBLES
+Stock des indemnités exigibles. Si le prêt est un prêt CONSO, ce sont des Indemnités légales de retard (ILR) qui sont calculées. Sinon, ce sont des intérêts de retard (INDR). Ces indemnités (ou intérêts) sont calculées dès le 1er impayé.
+42
+TAUX INTERET BAREME
+Taux applicable au crédit en l'absence de dérogation
+43
+TAUX D'INTÉRÊT INITIAL
+Taux d'intérêt initial
+44
+TAUX INTÉRÊT DU PRET
+Taux d'intérêt du prêt (à la date d'arrêté du CRE). C'est le taux de la banque. Le taux de l'emprunteur peut être différent : TX016 -TX018.
+45
+TEG
+Le taux effectif global (TEG) est la traduction, sous forme d'un taux, du coût réel d'un crédit immobilier ou un crédit à la consommation selon les normes de calcul appliquées en France.
+46
+47
+TAUX DE CESSION INTERNE
+Taux de cession interne
+48
+TAUX FORWARD
+Composante forward inclus dans le TCI
+49
+TCI QRM
+Taux de Cession Interne (TCI) calculé par l'ALM dans l'outil QRM
+
+periodicite
+nb_termes
+nb_fran
+cd_fran
+nb_amort
+mnt_ech_theo
+dt_der_ech
+mnt_der_ech
+mnt_krd_ech
+mnt_int_ech
+mnt_ass_ech
+period_index
+typ_tx
+cd_index
+index
+var_max_tx
+seuil_cape
+marge
+id_clb_inst
+dt_accep_bnq
+dt_edi_off
+dt_accep_cli
+dt_eff
+dt_1er_dblq
+dt_fin_init
+mat_init
+dt_fin_eff
+mat_reelle
+duree_resi
+dt_imp
+typ_duree_caution
+dt_next_index
+nb_rng
+cd_rng
+dt_dem_rng
+dt_acc_rng
+enc_dt_rng
+tx_pre_rng
+nb_term_pre_rng
+nb_ra
+cd_ra
+typ_ra
+ori_ra
+cd_frml_ra
+dt_ope_ra
+dt_vl_ra
+dt_ori_mvt_ra
+mnt_ra
+enc_dt_ra
+nb_term_pre_ra
+PERIODICITE DU PRET
+C'est la fréquence de prélèvement des échéances (M =mensuel ; T= Trimestriel ; S= Semestriel ; A= Annuel)
+51
+NOMBRE DE TERMES ACCORDES
+Nombre de termes accordés (y compris le différé amortissement = franchise )
+Le nombre de terme d'un prêt est déterminé en fonction de sa durée et de sa périodicité de remboursement des échéances. (ex : si durée de 120 mois et remboursement mensuel, le prêt possède 120 termes si durée de 120 mois et remboursement annuel, le prêt possède 10 termes)
+52
+NOMBRE DE TERMES DE FRANCHISE
+Nombre de termes de franchise sur le prêt (différé d'amortissement)
+la franchise ou différé d'amortissement est une période durant laquelle les intérêts ne sont plus remboursés (parfois le capital également) - voir définition de la RUB207
+53
+CODE TYPE FRANCHISE
+Type de franchise (ex : 0 = pas de franchise, 2 = normale amortissement différé )
+La franchise est une période inclue dans le déroulement du prêt qui va du 1er déblocage jusqu’à la 1ère échéance de remboursement de capital. Sa durée est incluse dans la durée totale du prêt et est figée dans l’offre de prêt. Durant cette période, l'emprunteur ne rembourse pas de capital. Il existe plusieurs types de franchise : - la franchise normale est une période durant laquelle l’emprunteur paye les intérêts sur les sommes débloquées - la franchise totale est une période durant laquelle l'emprunteur ne paye pas d'intérêt. Les intérêts non payés (reportés) sont stockés et prélevés en phase de remboursement.
+54
+NOMBRE AMORTISSEMENT
+Nombre de termes accordés hors le nombre de termes de franchises
+nombre de termes accordes - nombre de termes de franchise
+55
+MONTANT ECHEANCE THEORIQUE
+Montant  théorique de l'échéance du crédit immobilier.
+56
+DATE DERNIERE ECHEANCE PAYE
+Date de la dernière échéance payée
+57
+MONTANT DERNIERE ECHEANCE
+Montant de la dernière échéance
+58
+MONTANT CAPITAL RESTANT ECHEANCE
+Montant du capital restant dû après le réglement de la dernière échéance (hors IFA)
+Montant de la dernière échéance - montant intérêt de la période - assurance AID
+59
+MONTANT INTÉRÊTS ECHEANCE
+Part des intérêts dans le montant de la dernière échéance
+60
+MONTANT ASSURANCE AID ECHEANCE
+Part de la cotisation à l'AID (Assurance Invalidité Décès) dans le montant de l'échéance
+61
+FREQUENCE DE VARIABILITE TAUX IN
+Fréquence de révision du taux indexé, en nombre de période (échéance). (donnée renseignée pour les prêts à taux révisable : RUB208 = R) (donnée visible dans SGES : "REVISABLE TOUS LES " sur l'écran des caractéristiques d'indexation du taux (choix 32)
+62
+TYPE DE TAUX
+Type de taux. F = fixe (le taux n'évolue pas), R = révisable (le taux est susceptible d'évoluer lors de la vie du prêt).
+63
+CODE INDEX
+Donnée qui ne sert que pour les prêts à taux variable. Elle est l'une des caractéristiques de révision d'un prêt, Un index peut être constitué de 1 à 10 composantes (Taux de référence).
+64
+VALEUR TAUX REVISABLE
+Valeur en taux de l'index (donnée renseignée pour les prêts à taux révisable : RUB208 = R) Un index est un taux de référence (ou combinaison de plusieurs taux de référence) qui peut varier en fonction des conditions des marchés financiers (ex : EURIBOR).
+65
+VARIATION ANNUELLE MAX. TAUX
+Nombre de points de variation maximum qui peut être appliquée sur le taux du prêt CAPE, à chaque révision de taux. Ex : 0,75 (donnée renseignée pour les prêts à taux révisable et capé)
+66
+VALEUR DU SEUIL DE REPERCUSSION
+Seuil de points pour lequel, la variation de taux n'est pas appliquée. Ex : Si TX626 : 0,5, et que la variation est de 0,25, elle ne sera pas appliquée sur le taux. (donnée renseigné pour les prêts à taux révisable)
+67
+MARGE
+Pourcentage total de variation M. Nombre de points de variation totale maximum qui peut être appliqué sur le taux du prêt CAPE, durant toute sa vie (toutes variations cumulées). Ex : si la donnée est renseignée à 2, on ne pourra pas faire varier de plus de 2 point maximum le taux (toutes variations cumulées) sur toute la vie du prêt. (donnée renseignée pour les prêts à taux révisable et capé)
+68
+IDENTIFIANT AYANT ACCEPTE DOSSIER
+Numéro de personne qui a fait passer le dossier en "offre acceptée"
+69
+DATE D'ACCORD
+Date d'accord de l'offre de prêt (elle correspond à la date de départ du Hors-Bilan)
+70
+DATE EDITION OFFRE
+Date d'édition de l'offre au client
+71
+DATE OFFRE DE PRET
+Date d'acceptation de l'offre de prêt par le client
+72
+DATE EFFET CONTRAT
+Date de début effective du contrat. date récupérée du fichier MIN contrat
+73
+DATE VALEUR 1ER DEBLOCAGE
+Date de valeur du 1er déblocage
+74
+DATE FIN INITIAL
+Date de fin initial
+75
+MATURITE INITIAL
+Nombre année du prêt initial. C'est le nombre d'année entre la date de l'échéance initiale du contrat et la date effet du prêt.
+76
+DATE DE FIN D'EFFET
+77
+MATURITE RELLE
+Nombre d'année du prêt réel. C'est le nombre d'année entre la date de l'échéance réel du contrat et la date effet du prêt. C'est une donnée renseignée une fois que le contrat est en statut "Clos",
+78
+DUREE RESIDUELLE
+La durée résiduelle est la durée, en nombre de jours, qu'il reste entre la date fonctionnelle (date de la mise à jour des données) et la date de fin de contrat réel.
+79
+1ER IMPAYE NON RESOLU
+Date de l'échéance à l'origine de l'impayé non résolu le plus ancien.
+80
+TYPE DUREE CAUTION
+Type de durée de la caution. DET = Durée Déterminé ; IND = Durée Indéterminée ; RNV = Durée à renouvellement Tacite. Cette Information est à la main des utilisateurs via la transaction AVCT
+81
+DATE PROCHAINE INDEXATION
+Date du prochain fixation du taux d'intérêt pour les crédits à taux variable
+82
+NOMBRE ACCORD RENEGOCIATION
+Nombre d’accord de la banque de la renégociation
+83
+CODE TYPE RENEGOCIATION
+Code qualifiant le type de la renégociation (Ex : STA2 = renégociation standard du prêt; PAUA = pause remboursement avec avenant)
+84
+DATE DEMANDE RENEGOCIATION
+Date de la demande de renégociation
+85
+DATE ACCORD RENEGOCIATION
+Date d’accord de la banque de la renégociation
+86
+MONTANT ENCOURS DATE RENEGOCIATION
+Montant de capital restant dû au moment de la renégociation
+87
+TAUX INTÉRÊT AVANT RENEGOCIATION
+Taux d’intérêt du prêt avant la renégociation
+88
+DUREE RESTANT EN MOIS AVANT RENEGOCIATION
+Durée totale restante du prêt en mois avant la renégociation. Si RUB070 = 'ANTI' (anticipation), lorsque le prêt vient de passer en gestion et n'a pas été encore débloqué, la RUB173 correspond à la durée de la période d'anticipation.
+89
+NOMBRE OPERATION REMBOURSEMENT ANTICIPE
+Nombre d'opération de remboursements anticipés
+90
+MOTIF DE REMBOURSEMENT ANTICIPE
+Motif du Remboursement Anticipé (ex : 001 = initiative client Remboursement Anticipé total ; 002 = initiative client Remboursement Anticipé partiel … )
+91
+TYPE DE REMBOURSEMENT ANTICIPE
+Ce champs est renseigné en extraction du dernier caractère du champs "cd_ra". C'est le type de remboursement anticipé (ex: 1 = remboursement anticipé total, 2 = remboursement anticipé partiel, etc.)
+92
+ORIGINE DU REMBOURSEMENT ANTICIPE
+Ce champs est renseigné en extraction du premier caractère du champs "cd_ra". C'est l'origine du remboursement anticipé (ex: 0 = initiative client).
+93
+CODE FORMULE REMBOURSEMENT ANTICIPE
+Type de maintien après le Remboursement Anticipé Partiel. 1 = maintien de la durée (le montant de l'échéance diminue) ; 2 = maintien du montant de l'échéance (la durée du prêt diminue)
+94
+DATE OPERATION REMBOURSEMENT ANTICIPE
+Date opération du remboursement anticipé
+95
+DATE VALEUR REMBOURSEMENT ANTICIPE
+Date de valeur du remboursement anticipé
+96
+DATE ORIGINE MOUVEMENT REMBOURSEMENT ANTICIPE
+Date d'origine du mouvement remboursement anticipé
+97
+MONTANT REMBOURSEMENT ANTICIPE
+Montant de capital amorti (remboursé) lors du remboursement anticipé.
+98
+ENCOURS AVANT REMBOURSEMENT ANTICIPE
+Montant de capital restant dû avant le remboursement anticipé.
+99
+NOMBRE TERMES DU PRET
+Nombre de termes du prêt (durée du prêt indiquée dans le contrat). Nombre d’échéances dans le tableau d’amortissement du prêt.
+
+nb_rst
+stt_der_rst
+dat_der_rst
+dat_fin_rst
+mtf_der_rst
+typ_der_rst
+fct_der_rst
+ass_emp_cie
+ass_emp_cnt_ctl
+ass_emp_num_cnt
+ass_emp_tx_qte
+ass_emp_tx_brut
+ass_emp_tx_net
+ass_emp_dt_fin
+cd_obj_rsk
+cd_nat
+cd_res
+mnt_bien_ori
+mnt_app
+mnt_tvx
+mnt_frais_not
+bien_adr
+bien_commune
+cd_postal
+bien_dpe
+bien_detail_dpe
+bien_ges
+bien_detail_ges
+bien_date_dpe
+ltv_ori
+ltv_act
+dt_index_reval
+vlr_reval_init
+dt_reval
+per_rev
+mnt_reval
+vlr_reval_act
+ind_repr
+cd_risque
+dt_cd_risque
+cd_etat_creance
+dt_cd_etat_creance
+mnt_prov_cap
+mnt_prov_int
+mnt_prov_hb
+mnt_dot
+mnt_rep
+mnt_psp
+dt_psp
+cd_bck_ifrs9
+NOMBRE RESTRUCTURATION
+Nombre de restructuration pour risque de crédit du prêt 
+101
+SITUATION DERNIERE RESTRUCTURATION
+Situation à la dernière restructuration du prêt. Permet de distinguer les restructurations selon les critères: A = actif H = historisé.
+102
+DATE DERNIERE RESTRUCTURATION
+Cette date indique le jour du début de la restructuration du contrat. Cette date peut également être celle de la modification de la restructuration le cas échéant.
+103
+DATE FIN RESTRUCTURATION
+Cette date indique le jour de la fin de la restructuration du contrat.
+104
+MOTIF DERNIERE RESTRUCTURATION
+Libellé du motif de restructuration. (Ex: Prorogation d'une échéance en capital, Prorogation d'une ligne de crédit)
+105
+TYPE DERNIERE RESTRUCTURATION
+Code type de restructuration (ex: PR = 1ère restructuration; NR = nouvelle restructuration)
+106
+FONCTIONNEMENT DERNIERE RESTRUCTURATION
+Code fonctionnement qui donne une information sur l'origine de la restructuration (ex: RA = restructuration automatique; RM = restructuration manuelle).
+107
+ASSURANCE EMPRUNTEUR COMPAGNIE
+Compagnie d'assurance de l'assurance emprunteur liée au crédit
+108
+ASSURANCE EMPRUNTEUR CONTRAT CATALOGUE
+Numéro de contrat catalogue de l'assurance emprunteur, disponible si assureur CNP
+109
+ASSURANCE EMPRUNTEUR NUMERO CONTRAT
+Numéro de contrat de l'assurance emprunteur rattachée au crédit
+110
+ASSURANCE EMPRUNTEUR TAUX QUOTITE
+Quotité de l'assurance emprunteur rattachée au crédit
+111
+ASSURANCE EMPRUNTEUR TAUX BRUT
+Taux brut de l'assurance emprunteur rattachée au crédit et pondéré à la quotité du taux soit pour l'assurance CNP soit les assurances externes
+112
+ASSURANCE EMPRUNTEUR TAUX NET
+Taux NET de l'assurance emprunteur rattachée au crédit et pondéré à la quotité du taux soit pour l'assurance CNP soit les assurances externes
+113
+ASSURANCE EMPRUNTEUR DATE DE FIN
+Date de fin de l'assurance emprunteur rattachée au crédit
+114
+CODE OBJET
+Code objet du prêt Ex : AE (achat de terrain), GG (matériels agricoles), 41 (camping-car)
+115
+CODE NATURE DU PRÊT
+Code nature du prêt. Ex : 01 (résidence principale), 10 (prêt personnel), 40 (prêt à l'agriculture)
+116
+CODE RESIDENCE
+Code renseignant l'usage du bien financé
+117
+MONTANT PROJET
+Montant du projet auquel appartient le prêt (renseigné lors de l'instruction). Un projet peut contenir plusieurs prêts.
+118
+MONTANT APPORT
+Montant de l'apport réalisé par le client pour son achat immobilier
+119
+MONTANT TRAVAUX
+Montant des travaux (coût complémentaire au montant d'achat du bien immobillier) lié à l'achat du bien immobillier lors de la conclusion du contrat de  crédit immobillier.  
+120
+MONTANT FRAIS DE NOTAIRE
+Montant des frais collectés par le notaire lors correspondant à un ensemble des frais d'acquisition à la charge de l'acheteur du bien immobilier.
+121
+ADRESSE DU BIEN IMMOBILIER
+Adresse du bien immobilier
+122
+COMMUNE BIEN IMMOBILIER
+Commune du bien immobilier
+123
+CODE POSTAL
+Code postal
+124
+CLASSE DPE
+Diagnostic de performance energitique du bien acheté
+125
+NOTE DPE
+Diagnostic de performance energitique du bien acheté
+126
+CLASSE GES
+Diagnostic emission de gaz à effet de serre du bien acheté
+127
+NOTE GES
+Diagnostic emission de gaz à effet de serre du bien acheté
+128
+DATE DPE BIEN
+Date DPE du bien
+129
+LOAN TO VALUE ORIGINALE
+Ratio prêt-valeur entre le nominal du prêt et la valeur d'achat du bien financé.
+130
+LOAN TO VALUE ACTUELLE
+Ratio prêt-valeur entre le nominal du prêt et la valeur revalorisée du bien financé.
+131
+INDICE REVALORISATION
+Description de l'indice géographique de revalorisation au format chambre des notaires
+132
+VALEUR INDEX REVALORISATION INITIAL
+Valeur de l'indice initial pour revalorisation du bien immobilier
+133
+DATE REVALORISATION
+Date de revalorisation du bien immobilier
+134
+PERIODE REVISION
+Fréquence de révision du taux indexé, en nombre de période (échéance).
+La donnée est renseignée pour les prêts à taux révisable : RUB208 = R). Donnée visible dans SGES : "REVISABLE TOUS LES " sur l'écran des caractéristiques d'indexation du taux (choix 32)
+135
+MONTANT REVALORISE
+Montant revalorisé du bien immobilier
+136
+VALEUR INDEX REVALORISATION ACTIF
+Valeur de l'indice utilisé pour la revalorisation
+137
+INDICATEUR REPRISE
+Indicateur de reprise Saphir Expert
+138
+CODE RISQUE
+Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions). Code bucket du contrat à la date du dernier arrêté mensuel.
+139
+DATE CODE RISQUE
+Date d'entrée en défaut issu du 52SCD.
+140
+CODE ETAT CREANCE
+Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions). Code numérique de deux caractères désignant l'état de la créance. B1 et B2: 01 sain ; B3: 10 douteux ,30 contentieux ; PP (Passage Perte): 19 douteux passage par pertes, 39 contentieux passage par pertes.
+141
+DATE DEBUT ETAT DEFAUT
+La date de début de l'état défaut détermine la date de passage à l'état en cours: douteux ou contentieux. Elle ne concerne que les créances B3 (RUB-006).
+142
+MONTANT PROVISION CAPITAL
+Montant de Provision Bilan capital +Provision intérêt pour B1/B2 (état sain de la créance) à date d'arrêté mensuel ("DAT-001").
+143
+MONTANT PROVISION INTÉRÊT
+Ne Concerne que les Créances CDL (créances douteuses et litigieuses/B3). Montant de Provision intérêt à date d'arrêté mensuel ("DAT-001").
+144
+MT PROVISION HORS BILAN
+Montant de Provision Hors-Bilan à date d'arrêté mensuel ("DAT-001").
+145
+MONTANT DOTATION
+Montant de la dotation du capital bucket 3 + dotation hors bilan + dotation intérêt
+146
+MONTANT REPRISE
+Donnee issue du progiciel Fusion Risk ECL (Calculateur des Provisions). Montant en devise qui représente la somme du: montant reprise capital bucket 3 + montant reprise hors bilan bucket 3 + montant reprise intérêt bucket 3.
+147
+MONTANT PASSAGE A PERTE
+Donnee issue du progiciel Fusion Risk ECL (Calculateur des Provisions). Montant en devise qui représente la somme du: montant perte capital non couverte + montant perte intérêt non couverte + montant perte capital couvert cv + montant perte intérêt couvert cv
+148
+DATE PASSAGE PERTE
+Date à laquelle la créance est passée par perte : valorisée uniquement sur les créances de RUB006 = ‘PP ‘ ou NA
+149
+CODE BUCKET IFRS9
+Permet de connaître le niveau de risque B1=Sain; B2=Sensible ; B3=Douteux/Contentieux
+
+
+mnt_prov_b_ifrs9
+mnt_dot_b_ifrs9
+mnt_rep_b_ifrs9
+mnt_prov_hb_ifrs9
+mnt_dot_hb_ifrs9
+mnt_rep_hb_ifrs9
+dt_rwa
+ead_nette_b
+ead_nette_hb
+total_rwa
+rwa_collateralized_b
+rwa_collateralized_hb
+rwa_guaranteed_b
+rwa_guaranteed_hb
+rwa_unguaranteed
+scaling_factor
+source
+cd_incident
+cd_neie
+cd_scriv
+cd_primo
+cd_modu
+cd_ficp
+nb_ficp
+mnt_revb_men
+mnt_impo
+mnt_revn_men
+mnt_rev_res
+tx_edt
+naeg
+mnt_frais_dos
+mnt_pdt_int
+mnt_com_per
+mnt_fra_ira
+mnt_fra_rng
+mnt_fra_coc
+mnt_pdt_tar
+mnt_etal_pnl
+num_technique
+dt_fin_reel
+lib_bien_dpe
+lib_cd_rt
+lib_cd_etat_creance
+lib_cd_etat_prt
+lib_cd_fran
+lib_cd_incident
+lib_cd_index
+lib_cd_nat
+lib_cd_neie
+lib_cd_obj_rsk
+MNT_PROV_B_IFRS9
+Montant des provisions  BILAN de l'entité en référence IFRS 9. 
+151
+152
+153
+MONTANT PROVISIONS HORS BILAN IFRS9
+Montant des provisions HORS BILAN IFRS 9 de l'entité en référence. 
+154
+155
+156
+DATE RWA
+Date d'arrêté des données utilisées pour le calcul des RWA (Risk Weighted Assets)
+157
+EAD NETTE BILAN
+Encours des crédits enregistré au bilan (Exposure At Default) utilisé pour le calcul des RWA
+158
+EAD NETTE HORS BILAN
+Encours des crédits enregistré hors bilan (Exposure At Default) utilisé pour le calcul des RWA
+159
+TOTAL RWA
+Montant total RWA pour un contrat donné
+160
+RWA BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+161
+RWA HORS BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+162
+RWA BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+163
+RWA HORS BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+164
+RWA NON GARANTI
+Montant des RWA pour la part des encours de crédits non garantis
+165
+SCALING FACTOR
+Facteur de pondération du RWA
+166
+SOURCE DES DONNEES
+Sources des flux de données (credics ou vic)
+167
+CODE SITUATION DU PRET
+Code indiquant la situation du prêt: 00 = normal; 05 = en incident; 10 = douteux; 20 = contentieux; 30 = contentieux déchu (DDT),
+168
+CODE NEIERTZ
+Code situation NEIERTZ (situation de surendettement : loi n°89-1010 du 31 décembre 1989) 00 = Pas de commiss. NEIERTZ ; 01 = Demande recours déposée ; 02 = Plan convention. Accepté ; 03 = Recours en justice ; 04 = Plan dénonce ; 10 = Moratoire lagarde ; 21 = Plan BDF accepté.
+169
+CODE SCRIVENER
+Type d'application de la loi Scrivener.
+170
+CODE PRIMO ACCEDANT
+Code booleen permettant d'identifier si l'emprunt immobilier est destiné à un achat éligible primo accedant (1: primo accedant, 0: non).
+171
+CODE PRET MODULABLE
+Code booléen indiquant si le prêt est modulable ou non (1 = modulable ; 0 = non modulable)
+172
+CODE FICP
+Code fichier national des incidents de remboursement des crédits aux particuliers (FICP)
+173
+NOMBRE DE CREANCES EN INCIDENCE FICP
+Nombre de Numéro du contrat (issu du référentiel Topaze contrat) relatif à la créance en incident. Une même personne (PSE-001) peut avoir plusieurs créances incidentées
+174
+MONTANT REVENU BRUT MENSUEL
+Montant revenu brut mensuel
+175
+MONTANT IMPOTS
+Montant d'impôts payés par l'emprunteur
+176
+MONTANT REVENU MENSUEL NET
+Montant revenu mensuel net après impôt de l'emprunteur (montant revenu brut mensuel - montant d'impôt mensuel)
+177
+MONTANT REVENU RESIDUEL THEORIQUE
+Lors de la procédure d'octroi, seuil minimum du montant de "reste à vivre" préconisé. Il peut être différent en fonction des entités et du nombre de personnes appartenant au foyer (son montant = revenus - charges)
+178
+TAUX ENDETTEMENT
+Taux endettement de l'emprunteur
+179
+NOMBRE ANNEES ENDETTEMENT GLOBAL
+Nombre d'années d'endettement global sur la durée du prêt
+180
+MONTANT TTC FRAIS DOSSIER
+Montant TTC des frais de dossier
+181
+MONTANT PRODUITS D'INTERÊTS
+Somme des montants produits d'intérêt pour les crédits immobiliers
+182
+MONTANT COMMISSIONS PERCUES
+Somme des montants des commissions perçues pour les crédits immobiliers
+183
+MONTANT FRAIS INTERETS REMBOURSEMENT ANTICIPE
+Montant de frais nets d'intérêts de remboursements anticipés
+184
+MONTANT FRAIS RENEGOCIATION
+Montant de frais nets de renégociations
+185
+MONTANT FRAIS COMMISSION OUVERTURE CREDIT
+Montant de frais nets d'ouverture de crédit
+186
+MONTANT PRODUIT TARIFE
+Montant tarifé net sur le contrat
+187
+MONTANT ETALEMENT PNL
+Montant étalement de la commission d'ouverture du crédit sur la période réelle du prêt.
+188
+IDENTIFIANT TECHNIQUE
+Identifiant technique utilisé par les chaînes de gestion de contrat et produits existants
+189
+DATE FIN CONTRAT
+Date de fin du contrat date récupérée du fichier MIN contrat
+190
+191
+191
+LIBELLE CODE ETAT CREANCE
+Libellé indiquant l'état de la créance (douteux, douteux passage par pertes, contentieux passage par pertes, contentieux)
+192
+LIBELLE CODE ETAT PRÊT
+Libellé indiquant l'état du prêt (en remboursement, cloture, en franchise, en facilité de paiement, echu et impayés, en franchise fictive, etc.)
+193
+LIBELLE CODE FRANCHISE
+194
+LIBELLE CODE INCIDENT
+Libellé indiquant la situation du prêt (normal; en incident; douteux; contentieux; contentieux déchu)
+195
+LIBELLE CODE INDEX
+196
+LIBELLE CODE NATIONALITE
+Libellé de la nationalité du client
+197
+LIBELLE CODE NEIERTZ
+Libellé code NEIERTZ
+198
+LIBELLE CODE OBJET DU CREDIT
+Libellé objet du prêt Ex : AE (achat de terrain), GG (matériels agricoles), 41 (camping-car)
+
+
+lib_cd_res
+lib_cd_rng
+lib_cd_scriv
+lib_ori_ra
+lib_stt_cnt
+lib_typ_mar
+lib_typ_prt
+lib_typ_ra
+annee_mois_part
+LIBELLE CODE RESIDENCE
+Libellé indiquant le type de residence (maison, appartement, local commercial, terrain, parking, etc.)
+200
+LIBELLE CODE TYPE RENEGOCIATION
+Code qualifiant le type de la renégociation (Ex : STA2 = renégociation standard du prêt; PAUA = pause remboursement avec avenant)
+201
+LIBELLE CODE SCRIVENER
+202
+LIBELLE ORIGINE DU REMBOURSEMENT ANTICIPE
+Libellé indiquant l'origine du remboursement anticipé (ex: RA initiative du client, RA de renegociation, etc.)
+203
+LIBELLE STATUT CONTRAT
+Libellé indiquant dans quel état est le contrat (ex : Normal, Contentieux, Clos)
+204
+LIBELLE TYPE MARCHE
+Libellé qui permet de connaître le type de marché du prêt (ex: LOGEMENT ; EQ.FAMILIAL; PROFESSIONNEL; COLLECTIVITES)
+205
+LIBELLE TYPE PRÊT
+Libellé qui permet de connaître le type de prêt (ex: Prêt personnel, prêt étudiant, rénégo habitat, etc.)
+206
+LIBELLE TYPE REMBOURSEMENT ANTICIPE
+Libellé qui permet de connaître le type de remboursement anticipé (ex: remboursement total, remboursement partiel, remboursement par perte, etc.)
+207
+PARTITION MOIS ANNEE

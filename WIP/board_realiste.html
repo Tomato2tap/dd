@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Banque à Distance</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: #f5f3f0;
+      color: #2c2416;
+      font-family: Inter, system-ui, sans-serif;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 24px;
+      background: #e8e5e0;
+      border-radius: 16px;
+    }
+    .header h1 {
+      font-size: 28px;
+      color: #6b3a3a;
+      margin-bottom: 8px;
+    }
+    .header p {
+      color: #8b7355;
+      font-size: 14px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #6b3a3a;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #c9453a;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid #ddd3cc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .card-label {
+      font-size: 12px;
+      color: #8b7355;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .card-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #6b3a3a;
+    }
+    .card-sub {
+      font-size: 12px;
+      color: #a08070;
+      margin-top: 6px;
+    }
+    .bar-dark {
+      background: #6b3a3a;
+      color: #fff;
+    }
+    .bar-dark .card-label {
+      color: rgba(255,255,255,0.7);
+    }
+    .bar-dark .card-value {
+      color: #fff;
+    }
+    .bar-dark .card-sub {
+      color: rgba(255,255,255,0.6);
+    }
+    .two-col {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .chart-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #ddd3cc;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+    }
+    .chart-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6b3a3a;
+      margin-bottom: 16px;
+    }
+    .chart-placeholder {
+      flex: 1;
+      background: linear-gradient(135deg, #f0ede8 0%, #e8e5e0 100%);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #8b7355;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .product-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #ddd3cc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .product-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6b3a3a;
+      margin-bottom: 12px;
+    }
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #8b7355;
+    }
+    .product-row strong {
+      color: #6b3a3a;
+      font-weight: 600;
+    }
+    @media (max-width: 1024px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bienvenue sur le tableau de suivi digital</h1>
+      <p>Banque à distance - Mise à jour : 29/05/2026</p>
+    </div>
+
+    <!-- Section 1 : Suivi Digital -->
+    <div class="section">
+      <div class="section-title">Suivi des Clients et Engagement Digital</div>
+      
+      <div style="margin-bottom: 20px;">
+        <div class="bar-dark card" style="display: flex; justify-content: space-around; padding: 20px;">
+          <div style="text-align: center;">
+            <div class="card-label">Clients</div>
+            <div class="card-value">77 991</div>
+          </div>
+          <div style="text-align: center; border-left: 1px solid rgba(255,255,255,0.2); border-right: 1px solid rgba(255,255,255,0.2); padding: 0 20px;">
+            <div class="card-label">Clients enrôlés</div>
+            <div class="card-value">20 893</div>
+          </div>
+          <div style="text-align: center;">
+            <div class="card-label">Smartphones enrôlés</div>
+            <div class="card-value">21 187</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+        <div class="card">
+          <div class="card-label">Connexions uniques</div>
+          <div class="card-value">0</div>
+          <div class="card-sub">Total</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Web</div>
+          <div class="card-value">0</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Mobile</div>
+          <div class="card-value">0</div>
+        </div>
+        <div class="card">
+          <div class="card-label">iOS</div>
+          <div class="card-value">0</div>
+        </div>
+        <div class="card">
+          <div class="card-label">SVI</div>
+          <div class="card-value">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 : Produits Bancaires -->
+    <div class="section">
+      <div class="section-title">Portefeuille Produits</div>
+      
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-name">Cartes</div>
+          <div class="product-row"><span>Nb cartes</span><strong>16 166</strong></div>
+          <div class="product-row"><span>Immatriculation</span><strong>6 877</strong></div>
+          <div class="product-row"><span>Autre</span><strong>11 052</strong></div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-name">Virements</div>
+          <div class="product-row"><span>Virements uniques</span><strong>348 640€</strong></div>
+          <div class="product-row"><span>Web</span><strong>186 586€</strong></div>
+          <div class="product-row"><span>Mobile</span><strong>142 089€</strong></div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-name">Comptes</div>
+          <div class="product-row"><span>Comptes</span><strong>68 831</strong></div>
+          <div class="product-row"><span>Montant cumulé</span><strong>711 435.15 KC</strong></div>
+        </div>
+      </div>
+
+      <div class="product-grid" style="margin-top: 16px;">
+        <div class="product-card">
+          <div class="product-name">Épargne</div>
+          <div class="product-row"><span>Comptes d'épargne</span><strong>25 529</strong></div>
+          <div class="product-row"><span>Encours total</span><strong>358 041,26 KC</strong></div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-name">Crédits</div>
+          <div class="product-row"><span>Crédits immobilier</span><strong>12 001</strong></div>
+          <div class="product-row"><span>Crédits consommation</span><strong>484</strong></div>
+          <div class="product-row"><span>Autres crédits</span><strong>8</strong></div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-name">Assurance</div>
+          <div class="product-row"><span>Contrats</span><strong>21 045</strong></div>
+          <div class="product-row"><span>Montant cumulé</span><strong>2 193,99 M€</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 : Graphiques -->
+    <div class="section">
+      <div class="section-title">Tendances et Analyses</div>
+      
+      <div class="two-col">
+        <div class="chart-box">
+          <div class="chart-title">Évolution des Connexions par Canal</div>
+          <div class="chart-placeholder">Graphique temporel : Connexions Web, Mobile, iOS</div>
+        </div>
+        
+        <div class="chart-box">
+          <div class="chart-title">Répartition des Utilisateurs</div>
+          <div class="chart-placeholder">Pie Chart : Segments utilisateurs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Analyse Détaillée</div>
+      
+      <div class="two-col">
+        <div class="chart-box">
+          <div class="chart-title">Activité Quotidienne</div>
+          <div class="chart-placeholder">Graphique linéaire : Connections par jour</div>
+        </div>
+        
+        <div class="chart-box">
+          <div class="chart-title">Performance Produits</div>
+          <div class="chart-placeholder">Barres : Comparaison par produit</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

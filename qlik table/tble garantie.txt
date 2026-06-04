@@ -1,0 +1,175 @@
+dt_fonc
+id_cli
+stt_cli
+num_cnt_gar
+num_cnt_prt
+num_tec_prt
+nb_gar_prt
+stt_gar
+stt_cnt
+cnt_gar_ctl
+lib_ctl
+det_typ_gar
+dt_eff_gar
+dt_ech_gar
+dur_gar
+cd_rang
+cd_etat
+mnt_gar
+mnt_gar_cpta
+num_cnt_ass
+lib_cnt_ass
+id_cie_ass
+nom_cie_ass
+mnt_bien_gar_ori
+vlr_reval_init
+vlr_reval_act
+dt_reval
+mnt_reval
+gar_imm_adr
+lib_comp
+lib_voie
+lib_lieu_dit
+lib_ville
+cd_postal
+id_topz_not
+id_topz_gar
+dt_rwa
+tx_rwa
+mnt_rwa
+lib_cd_etat
+lib_cnt_gar_ctl
+lib_det_typ_gar
+lib_stt_gar
+annee_mois_part
+DATE FONCTIONNELLE
+Date à laquelle les données sont arrêtées
+Les données sont arrêtées fin du mois.
+1
+IDENTIFIANT CLIENT
+Identifiant client
+2
+STATUT CLIENT
+Statut du client (COE: coemprunteur, EMP: emprunteur, etc.)
+3
+NUMERO CONTRAT SOUSCRIT GARANTIE
+Numéro du contrat souscrit de la garantie associée au crédit
+4
+NUMERO CONTRAT PRÊT
+Numéro de contrat souscrit du credit couvert par la garantie
+5
+NUMERO TECHNIQUE PRET
+Numéro technique du prêt rattaché au contrat de garantie
+6
+NOMBRE DE GARANTIES DU PRET
+Nombre de garanties actives couvrant un même prêt
+7
+STATUT DE LA GARANTIE
+Code indique l'état de la garantie : indique dans quel etat est le contrat de garantie (à prendre, levée, echue, annulée…)
+8
+STATUT CONTRAT
+Code indiquant dans quel état est le contrat (ex : 0 = Normal, 8 = Contentieux, 9 = Clos)
+9
+NUMERO CONTRAT CATALOGUE GARANTIE
+Numéro du contrat catalogue de la garantie
+10
+LIBELLE CONTRAT CATALOGUE
+Libellé du contrat catalogue
+11
+TYPE GARANTIE
+Code indiquant de quelle nature est le bien qui sert de garantie (ex : 01 = immeuble; 02 = vehicule; 03 = materiel; 04 = fond commerce; 05 = fond artisanal; 06 = contrat assurance vie etc.)
+12
+DATE DEBUT GARANTIE
+Date à laquelle la garantie débute
+13
+DATE ECHEANCE GARANTIE
+Date de l'echéance réelle de la garantie, apres renouvellement éventuel
+14
+DUREE GARANTIE
+Durée de la garantie correspondant au montage financier
+15
+CODE RANG GARANTIE
+Code indiquant à quel rang se trouve la garantie
+16
+CODE ETAT GARANTIE
+Code état de la garantie
+17
+MONTANT GARANTIE
+Montant initial de la garantie, hors revalorisation potentielle
+18
+MONTANT GARANTIE COMPTABLE
+Montant de la garantie comptable lié aux contrats de crédits
+19
+NUMERO DE CONTRAT ASSURANCE
+Numéro contrat d'assurance souscrit (Garantie prise sur des produits suravenir, comptes titres, placements (nantissement))
+20
+LIBELLE CONTRAT ASSURANCE
+Libellé du contrat d'assurance souscrit
+21
+IDENTIFIANT COMPAGNIE ASSURANCE
+Identifiant de la compagnie assurance
+22
+NOM COMPAGNIE ASSURANCE
+Nom de la compagnie d'assurance
+23
+MONTANT BIEN GARANTIE
+Montant initial correspondant à la valeur du bien qui servira de garantie
+24
+VALEUR INDEX REVALORISATION INITIAL
+Valeur de l'indice initial pour revalorisation du bien immobilier
+25
+VALEUR INDEX REVALORISATION ACTIF
+Valeur de l'indice utilisé pour la revalorisation
+26
+DATE REVALORISATION
+Date de revalorisation du bien immobilier
+27
+MONTANT REVALORISE
+Montant revalorisé du bien immobilier
+28
+ADRESSE GARANTIE IMMO 
+Adresse du bien immobilier placé en garantie
+29
+LIBELLE COMPLEMENT
+Complément de l'adresse du bien immobilier (escalier, bloc, nom de résidence, ensemble immobilier, etc.)
+30
+LIBELLE MENTION COMPLEMENTAIRE
+Provenant de l'adresse principale. Contient les notions de bâtiment, escalier, bloc, nom de résidence, ensemble immobilier, etc.
+31
+LIBELLE LIEU-DIT
+Lieu-dit de l'adresse privilégiée. la notion de lieu-dit est celle utilisée par la poste : ex commune fusionnée avec une autre, ville nouvelle construite à côté de l'ancien village (la Plagne 2000)
+32
+LIBELLE VILLE
+Libellé ville
+33
+CODE POSTAL
+Code postal
+34
+IDENTIFIANT TOPAZE NOTAIRE
+Identifiant Topaze du notaire procédant à l'acte de garantie
+35
+DENTIFIANT TOPAZE GARANT
+Identifiant topaze du garant
+36
+DATE RWA
+Date d'arrêté des données utilisées pour le calcul des RWA (Risk Weighted Assets)
+37
+TAUX RWA
+Taux RWA
+38
+MONTANT RWA
+Montant des RWA
+39
+CODE ETAT GARANTIE
+Libellé indiquant l'état de la garantie (ex: en cours, actes à éditer, action rétrogradée, envoyé à inscription, etc.)
+40
+LIBELLE CONTRAT CATALOGUE GARANTIE
+Libellé du contrat catalogue de la garantie (ex: credit logement, ordre irrevocable, gage sur vehicule, etc.)
+41
+LIBELLE TYPE GARANTIE
+Libellé indiquant de quelle nature est le bien qui sert de garantie (ex : immeuble; vehicule; materiel; fond commerce; fond artisanal; contrat assurance vie etc.)
+42
+LIBELLE STATUT DE LA GARANTIE
+Libellé indiquant l'état de la garantie : indique dans quel etat est le contrat de garantie (à prendre, levée, echue, annulée…)
+43
+PARTITION MOIS ANNEE

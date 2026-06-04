@@ -1,0 +1,421 @@
+qte_fds
+enc_fds_m
+volatilite_isin
+isin_risq
+dt_arr_n1
+enc_cnt_n1
+var_enc
+col_brute
+decollecte
+col_nette
+cd_risque
+dt_cd_risque
+cd_etat_creance
+dt_cd_etat_creance
+mnt_prov_cap
+mnt_prov_int
+mnt_prov_hb
+mnt_dot
+mnt_rep
+mnt_psp
+dt_psp
+cd_bck_ifrs9
+mnt_prov_b_ifrs9
+mnt_dot_b_ifrs9
+mnt_rep_b_ifrs9
+mnt_prov_hb_ifrs9
+mnt_dot_hb_ifrs9
+mnt_rep_hb_ifrs9
+dt_rwa
+total_rwa
+rwa_collateralized_b
+rwa_collateralized_hb
+rwa_guaranteed_b
+rwa_guaranteed_hb
+rwa_unguaranteed
+scaling_factor
+cd_chq
+dt_fabrication_chq
+lib_cd_ges
+lib_isin_fds
+lib_mod_gest
+lib_prof_exp
+lib_prof_risq
+lib_stt_cnt
+annee_mois_part
+QUANTITE EN POSITION
+INVE : Investisseur expérimenté
+0
+51
+ENCOURS FONDS
+Solde du contrat au grain supports = solde brut + mouvements en cours de valorisation. => valeur brut du support (nbre de parts bruts detenus * valeur liquidative) + si mouvement en cours de valorisation, montant en cours de valorisation du support.
+0
+52
+VOLATILITE ISIN
+53
+NIVEAU DE RISQUE ISIN
+Indicateur du niveau de risque de l'ISIN (note 1 à 7)
+54
+DATE ARRETE ANNEE PRECEDENTE
+0
+55
+ENCOURS CONTRAT ANNEE PRECEDENTE
+Encours client, valeur des comptes courants et epargne bancaire le mois précédent
+0
+56
+VARIATION ENCOURS
+Variation d'encours sur l'année
+0
+57
+COLLECTE BRUTE
+La somme des montants positifs déposés par le client sur un contrat d'épargne LoBP (excluant les opérations annulées)
+0
+58
+DECOLLECTE
+La somme des montants retirés par le client sur un contrat d'épargne LoBP
+0
+59
+COLLECTE NETTE
+La collecte brute + decollecte
+0
+60
+CODE BUCKET A FIN DE MOIS
+Code bucket du contrat à la date du dernier arrêté mensuel. Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions).
+0
+61
+DATE CODE RISQUE
+Date à laquelle le code risque a été mis à jour
+0
+62
+CODE ETAT CREANCE
+Code numérique de deux caractères désignant l'état de la créance. (B1 et B2 = 01 sain; B3= 10 douteux, 30 contentieux, PP (Passage Perte): 19 douteux passage par pertes, 39 contentieux passage par pertes)
+0
+63
+DATE ETAT CREANCE
+Date de début de l'état en cours (détermine la date de passage de l'état en cours douteux ou contentieux) de la créance lié au contrat de crédit. 
+0
+64
+MONTANT PROVISION CAPITAL
+Montant de provision bilan capital + provision intérêt pour B1/B2 à date d'arrêté mensuel ("DAT-001").
+0
+65
+MONTANT PROVISION INTÉRÊT
+Ne Concerne que les Créances CDL (créances douteuses et litigieuses/B3): Montant de Provision intérêt à date d'arrêté mensuel ("DAT-001").
+0
+66
+MONTANT PROVISION HORS BILAN
+Montant de Provision Hors-Bilan à date d'arrêté mensuel ("DAT-001").
+0
+67
+MONTANT DOTATION
+Montant dotation capital, hors bilan ant dotation intérêt bucket 3
+0
+68
+MONTANT REPRISE
+Montant reprise capital, hors bilan et intérêt bucket 3
+0
+69
+MONTANT PASSAGE A PERTE
+Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions) Montant en devise représentant le montant perte capital non couverte + perte intérêt non couverte + perte intérêt couvert cv
+0
+70
+DATE PASSAGE PERTE
+Date à laquelle la créance est passée par perte : valorisée uniquement sur les créances de RUB006 = ‘PP ‘ ou NA
+0
+71
+CODE BUCKET IFRS9
+Permet de connaître le niveau de risque (B1 = Sain , B2 = Sensible , B3 = Douteux/Contentieux)
+0
+72
+MONTANT PROVISIONS BILAN IFRS9
+Montant des provisions BILAN de l'entité en référence IFRS 9.
+0
+73
+74
+75
+MONTANT PROVISIONS HORS BILAN IFRS9
+Montant des provisions HORS BILAN IFRS 9 de l'entité en référence. 
+Le hors bilan concerne les droits et obligations d'une entreprise autres que ceux figurant au bilan et au compte de résultat. Ces engagements hors bilan constituent des droits et des obligations susceptibles de modifier le montant ou la consistance future du patrimoine d'une entreprise.
+76
+77
+78
+DATE RWA
+Date d'arrêté des données utilisées pour le calcul des RWA (Risk Weighted Assets)
+79
+TOTAL RWA
+Montant total RWA pour un contrat donné
+80
+RWA BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+81
+RWA HORS BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+82
+RWA BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+83
+RWA HORS BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+84
+RWA NON GARANTI
+Montant des RWA pour la part des encours de crédits non garantis
+85
+SCALING FACTOR
+Facteur de pondération du RWA
+86
+CODE CHEQUIER
+Top indiquant la détention d'un chéquier
+87
+DATE FABRICATION CHEQUIER
+Date à laquelle le dernier chéquier a été fabriqué
+88
+LIBELLE CODE GESTION
+Libellé qui indique le profil de gestion, si gestion sous mandat (150 = bpe dynamique premium ; 151 = bpe diversification premium ; 152 = bpe cto diversification premium ; 153 = bpe cto dynamique premium ; 154 = bpe pea dynamique premium ; 155 = bpe equilibre ; 156 = bpe pea euro ; 157 = bpe pea europe monde)
+0
+89
+LIBELLE DU FONDS ISIN
+90
+LIBELLE MODE GESTION CONTRAT
+Libellé du type de gestion (0 = Libre ; 2 = Gestion Sous Mandat)
+0
+91
+LIBELLE CONNAISSANCE ET EXPERIENCE
+INVB : Investisseur basique INVI : Investisseur informé INVE : Investisseur expérimenté
+92
+LIBELLE PROFIL RISQUE
+INVI : Investisseur informé
+0
+93
+LIBELLE STATUT CONTRAT
+Libellé indiquant dans quel état est le contrat (ex : Normal, Contentieux, Clos)
+0
+94
+PARTITION MOIS ANNEE
+
+
+dt_fonc
+id_cli
+stt_cli
+num_cnt
+num_tec
+num_cnt_ext
+rib_cli
+stt_cnt
+dt_eff
+dt_fin_eff
+nb_jrs_irr
+cnt_ctl
+lib_ctl
+lib_fam_niv3_pdt
+fam_pdt
+perimetre
+assur
+prof_risq
+dt_prof_risq
+prof_exp
+dt_prof_exp
+prof_sfdr
+volatilite_cnt
+enc_cnt_m
+enc_moy_m
+mnt_dbt_diff
+mnt_icne
+top_nanti
+mnt_nanti
+mnt_auto
+mnt_tar_brt
+mnt_tar_ext
+mnt_pdt_tar
+mnt_chg_int
+tx_int
+mnt_pdt_int
+mnt_de
+mnt_fdg
+mnt_ddg
+mnt_com_mouv
+dt_arr_m1
+enc_cnt_m1
+mod_gest
+cd_ges
+dt_eff_gsm
+dt_fin_gsm
+isin_fds
+lib_fds
+dt_cot
+cours_cot
+DATE FONCTIONNELLE
+Date à laquelle les données sont arrêtées
+Les données sont arrêtées fin du mois.
+1
+IDENTIFIANT CLIENT
+Identifiant client
+0
+2
+STATUT CLIENT
+Statut du client (COE: coemprunteur, EMP: emprunteur, etc.)
+0
+3
+NUMERO CONTRAT SOUSCRIT
+Numéro du contrat souscrit du compte de chèque à prélever
+0
+4
+IDENTIFIANT TECHNIQUE
+Numéro technique du services fourni
+0
+5
+NUMERO CONTRAT EXTERNE
+Numéro du contrat Externe de l'assurance crédit rattaché au client et par conséquent au contrat (N°contrat pour l'assureur)
+0
+6
+RIB CLIENT
+Rib du client
+0
+7
+STATUT CONTRAT
+Code indiquant dans quel état est le contrat (ex : 0 = Normal, 8 = Contentieux, 9 = Clos)
+0
+8
+DATE EFFET CONTRAT
+Date de début effective du contrat. date récupérée du fichier MIN contrat
+0
+9
+DATE FIN CONTRAT
+date de fin du contrat date récupérée du fichier MIN contrat
+0
+10
+NOMBRE DE JOUR IRREGULIER CNU
+Nombre de jours continus ouvrés où le compte chèque est en irrégulier. Non valorisé pour les livrets NB-002, correspond au nombre de jours écoulés entre la date de passage du solde en irrégulier (DAT-009) et la date d'arrêté de l'export des données, en enlevant les dimanches et les jours fériés. Cette donnée est alimentée uniquement si le solde de fin de mois du compte (CPR-001) est en irrégulier (Solde de fin de mois dépassant le montant d'autorisation de découvert CPR-003 et de tolérance CPR-005).
+0
+11
+CONTRAT CATALOGUE
+Numéro permettant d'associer un contrat souscrit au type exact de contrat auquel il fait référence.
+0
+12
+LIBELLE CONTRAT CATALOGUE
+Libellé du contrat catalogue
+0
+13
+LIBELLE FAMILLE NIVEAU 3 PRODUIT
+Libellé famille de niveau 3 du produit
+0
+14
+FAMILLE PRODUIT
+L'affiliation du produit à une famille de produit (ex: comptes courants, crédits immobiliers, épargne assurance, etc.)
+0
+15
+PERIMETRE
+Périmètre du contrat, déterminé sur la base du contrat catalogue (ex: credit)
+0
+16
+ASSUREUR
+Assureur, si support assurantiel
+0
+17
+Connaissance et expérience
+INVI : Investisseur informé
+0
+18
+DATE PROFIL RISQUE
+Date de mise à jour du profil de risque
+0
+19
+CONNAISSANCE ET EXPERIENCE
+INVB : Investisseur basique INVI : Investisseur informé INVE : Investisseur expérimenté
+20
+21
+22
+VOLATILITE DU CONTRAT
+23
+ENCOURS CONTRAT
+Encours client, valeur des comptes courants et epargne bancaire superieur à 0
+0
+24
+ENCOURS MOYEN DU MOIS
+25
+MOTANT DEBITS DIFFERES
+Montant des débits différés de carte
+0
+26
+27
+TOP NANTISSEMENT
+Indication de nantissement du contrat
+28
+MONTANT NANTISSEMENT
+Montant du contrat d'épargne servant de nantissement
+0
+29
+MONTANT AUTORISATION
+Montant d'autorisation lié au contrat
+0
+30
+MONTANT TARIFE BRUT
+Montant tarifé brut
+0
+31
+MONTANT TARIFE EXTOURNE
+Montant d'extourne
+0
+32
+MONTANT PRODUIT TARIFE
+Montant tarifé net sur le contrat (montant tarifé brut - montant d'extourne)
+0
+33
+MONTANT CHARGES INTERETS
+Montants des intérêts d'exercice brut
+0
+34
+TAUX INTERET EPARGNE
+Taux d'intérêt versé au client
+35
+MONTANT PRODUITS D'INTERETS
+0
+36
+MONTANT DROIT D'ENTREE
+37
+MONTANT FRAIS DE GESTION
+Prélèvements sur un compte bancaire correspondant à une transaction ou une gestion assurée par l'établissement financier
+0
+38
+MONTANT DROITS DE GARDE
+Rémunération perçue par un intermédiaire financier pour la gestion d'un compte titres et le suivi des opérations sur titres possédés par un tiers.
+0
+39
+MONTANT COMMISSIONS SUR MOUVEMENTS
+40
+DATE ARRETE MOIS PRECEDENT
+Date à laquelle sont arrêtées les données
+0
+41
+ENCOURS CONTRAT MOIS PRECEDENT
+Encours client, valeur des comptes courants et epargne bancaire le mois précédent
+0
+42
+MODE GESTION CONTRAT
+Type de Gestion (0 = Libre ; 2 = Gestion Sous Mandat)
+0
+43
+CODE GESTION
+Indique le profil de gestion, si gestion sous mandat (150 = bpe dynamique premium ; 151 = bpe diversification premium ; 152 = bpe cto diversification premium ; 153 = bpe cto dynamique premium ; 154 = bpe pea dynamique premium ; 155 = bpe equilibre ; 156 = bpe pea euro ; 157 = bpe pea europe monde)
+0
+44
+DATE EFFECTIF DE MISE EN GESTION
+Date d'effet du contrat de gestion sous mandat
+0
+45
+DATE FIN DE MISE EN GESTION
+Date de fin du contrat de gestion sous mandat
+0
+46
+CODE ISIN AMF
+Code du fonds, numéro de support financier
+0
+47
+LIBELLE FONDS
+Libellé du fonds
+0
+48
+DATE DE COTATION
+0
+49
+COURS DE COTATION
+0

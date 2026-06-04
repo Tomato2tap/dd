@@ -1,0 +1,314 @@
+dt_fonc
+id_cli
+stt_cli
+num_cnt
+num_tec
+agc_ins
+stt_cnt
+dt_eff
+dt_fin_eff
+cnt_ctl
+lib_ctl
+fam_pdt
+perimetre
+num_carte
+cd_typ_debit
+dt_ech_carte
+ind_carte_virtu
+mnt_tar_brt
+mnt_tar_ext
+mnt_pdt_tar
+cd_risque
+dt_cd_risque
+cd_etat_creance
+dt_cd_etat_creance
+mnt_prov_cap
+mnt_prov_int
+mnt_prov_hb
+mnt_dot
+mnt_rep
+mnt_psp
+dt_psp
+cd_bck_ifrs9
+mnt_prov_b_ifrs9
+mnt_dot_b_ifrs9
+mnt_rep_b_ifrs9
+mnt_prov_hb_ifrs9
+mnt_dot_hb_ifrs9
+mnt_rep_hb_ifrs9
+lib_stt_cnt
+annee_mois_part
+DATE FONCTIONNELLE
+Date à laquelle les données sont arrêtées
+Les données sont arrêtées fin du mois.
+1
+IDENTIFIANT CLIENT
+Identifiant client
+2
+STATUT CLIENT
+Statut du client (COE: coemprunteur, EMP: emprunteur, etc.)
+3
+NUMERO CONTRAT SOUSCRIT
+Numéro du contrat souscrit du compte de chèque à prélever
+4
+IDENTIFIANT TECHNIQUE
+Numéro technique du services fourni
+5
+AGENCE INSTRUCTION
+Nom de l'agence qui a instruit le contrat entre le client et la banque LIB_AGCE as AGC_INS
+6
+STATUT CONTRAT
+Code indiquant dans quel état est le contrat (ex : 0 = Normal, 8 = Contentieux, 9 = Clos)
+7
+DATE EFFET CONTRAT
+Date de début effective du contrat. date récupérée du fichier MIN contrat
+8
+DATE FIN CONTRAT
+date de fin du contrat date récupérée du fichier MIN contrat
+9
+CONTRAT CATALOGUE
+10
+LIBELLE CONTRAT CATALOGUE
+Libellé du contrat catalogue
+11
+FAMILLE PRODUIT
+L'affiliation du produit à une famille de produit (ex: comptes courants, crédits immobiliers, épargne assurance, etc.)
+12
+PERIMETRE
+Périmètre du contrat, déterminé sur la base du contrat catalogue (ex: credit)
+13
+14
+15
+16
+17
+MONTANT TARIFE BRUT
+Montant tarifé brut
+18
+MONTANT TARIFE EXTOURNE
+Montant tarifé extourné
+19
+MONTANT PRODUIT TARIFE
+Montant net de commissions tarifé pour ce contrat
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+CODE BUCKET IFRS9
+Classification IFRS9 (B1ou B2) du prêt accordé au client tel que calculé par LBP
+32
+MONTANT PROVISION BILAN IFRS9
+Montant provision bilan IFRS9 calculé par LBP
+33
+34
+35
+MONTANT PROVISION HORS BILAN IFRS9
+Montant provision hors bilan IFRS9 calculé par LBP
+36
+37
+38
+LIBELLE STATUT CONTRAT
+Libellé indiquant dans quel état est le contrat (ex : Normal, Contentieux, Clos)
+39
+PARTITION MOIS ANNEE
+
+qte_fds
+enc_fds_m
+volatilite_isin
+isin_risq
+dt_arr_n1
+enc_cnt_n1
+var_enc
+col_brute
+decollecte
+col_nette
+cd_risque
+dt_cd_risque
+cd_etat_creance
+dt_cd_etat_creance
+mnt_prov_cap
+mnt_prov_int
+mnt_prov_hb
+mnt_dot
+mnt_rep
+mnt_psp
+dt_psp
+cd_bck_ifrs9
+mnt_prov_b_ifrs9
+mnt_dot_b_ifrs9
+mnt_rep_b_ifrs9
+mnt_prov_hb_ifrs9
+mnt_dot_hb_ifrs9
+mnt_rep_hb_ifrs9
+dt_rwa
+total_rwa
+rwa_collateralized_b
+rwa_collateralized_hb
+rwa_guaranteed_b
+rwa_guaranteed_hb
+rwa_unguaranteed
+scaling_factor
+cd_chq
+dt_fabrication_chq
+lib_cd_ges
+lib_isin_fds
+lib_mod_gest
+lib_prof_exp
+lib_prof_risq
+lib_stt_cnt
+annee_mois_part
+QUANTITE EN POSITION
+INVE : Investisseur expérimenté
+0
+51
+ENCOURS FONDS
+Solde du contrat au grain supports = solde brut + mouvements en cours de valorisation. => valeur brut du support (nbre de parts bruts detenus * valeur liquidative) + si mouvement en cours de valorisation, montant en cours de valorisation du support.
+0
+52
+VOLATILITE ISIN
+53
+NIVEAU DE RISQUE ISIN
+Indicateur du niveau de risque de l'ISIN (note 1 à 7)
+54
+DATE ARRETE ANNEE PRECEDENTE
+0
+55
+ENCOURS CONTRAT ANNEE PRECEDENTE
+Encours client, valeur des comptes courants et epargne bancaire le mois précédent
+0
+56
+VARIATION ENCOURS
+Variation d'encours sur l'année
+0
+57
+COLLECTE BRUTE
+La somme des montants positifs déposés par le client sur un contrat d'épargne LoBP (excluant les opérations annulées)
+0
+58
+DECOLLECTE
+La somme des montants retirés par le client sur un contrat d'épargne LoBP
+0
+59
+COLLECTE NETTE
+La collecte brute + decollecte
+0
+60
+CODE BUCKET A FIN DE MOIS
+Code bucket du contrat à la date du dernier arrêté mensuel. Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions).
+0
+61
+DATE CODE RISQUE
+Date à laquelle le code risque a été mis à jour
+0
+62
+CODE ETAT CREANCE
+Code numérique de deux caractères désignant l'état de la créance. (B1 et B2 = 01 sain; B3= 10 douteux, 30 contentieux, PP (Passage Perte): 19 douteux passage par pertes, 39 contentieux passage par pertes)
+0
+63
+DATE ETAT CREANCE
+Date de début de l'état en cours (détermine la date de passage de l'état en cours douteux ou contentieux) de la créance lié au contrat de crédit. 
+0
+64
+MONTANT PROVISION CAPITAL
+Montant de provision bilan capital + provision intérêt pour B1/B2 à date d'arrêté mensuel ("DAT-001").
+0
+65
+MONTANT PROVISION INTÉRÊT
+Ne Concerne que les Créances CDL (créances douteuses et litigieuses/B3): Montant de Provision intérêt à date d'arrêté mensuel ("DAT-001").
+0
+66
+MONTANT PROVISION HORS BILAN
+Montant de Provision Hors-Bilan à date d'arrêté mensuel ("DAT-001").
+0
+67
+MONTANT DOTATION
+Montant dotation capital, hors bilan ant dotation intérêt bucket 3
+0
+68
+MONTANT REPRISE
+Montant reprise capital, hors bilan et intérêt bucket 3
+0
+69
+MONTANT PASSAGE A PERTE
+Donnée issue du progiciel Fusion Risk ECL (Calculateur des Provisions) Montant en devise représentant le montant perte capital non couverte + perte intérêt non couverte + perte intérêt couvert cv
+0
+70
+DATE PASSAGE PERTE
+Date à laquelle la créance est passée par perte : valorisée uniquement sur les créances de RUB006 = ‘PP ‘ ou NA
+0
+71
+CODE BUCKET IFRS9
+Permet de connaître le niveau de risque (B1 = Sain , B2 = Sensible , B3 = Douteux/Contentieux)
+0
+72
+MONTANT PROVISIONS BILAN IFRS9
+Montant des provisions BILAN de l'entité en référence IFRS 9.
+0
+73
+74
+75
+MONTANT PROVISIONS HORS BILAN IFRS9
+Montant des provisions HORS BILAN IFRS 9 de l'entité en référence. 
+Le hors bilan concerne les droits et obligations d'une entreprise autres que ceux figurant au bilan et au compte de résultat. Ces engagements hors bilan constituent des droits et des obligations susceptibles de modifier le montant ou la consistance future du patrimoine d'une entreprise.
+76
+77
+78
+DATE RWA
+Date d'arrêté des données utilisées pour le calcul des RWA (Risk Weighted Assets)
+79
+TOTAL RWA
+Montant total RWA pour un contrat donné
+80
+RWA BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+81
+RWA HORS BILAN COLLATERAL
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est de type collatéral (exemple: crédit logement)
+82
+RWA BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés au bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+83
+RWA HORS BILAN GARANTI
+Montant des RWA pour les encours de crédits enregistrés en hors bilan pour lesquels la garantie est un bien physique (exemple: hypothèque, nantissement)
+84
+RWA NON GARANTI
+Montant des RWA pour la part des encours de crédits non garantis
+85
+SCALING FACTOR
+Facteur de pondération du RWA
+86
+CODE CHEQUIER
+Top indiquant la détention d'un chéquier
+87
+DATE FABRICATION CHEQUIER
+Date à laquelle le dernier chéquier a été fabriqué
+88
+LIBELLE CODE GESTION
+Libellé qui indique le profil de gestion, si gestion sous mandat (150 = bpe dynamique premium ; 151 = bpe diversification premium ; 152 = bpe cto diversification premium ; 153 = bpe cto dynamique premium ; 154 = bpe pea dynamique premium ; 155 = bpe equilibre ; 156 = bpe pea euro ; 157 = bpe pea europe monde)
+0
+89
+LIBELLE DU FONDS ISIN
+90
+LIBELLE MODE GESTION CONTRAT
+Libellé du type de gestion (0 = Libre ; 2 = Gestion Sous Mandat)
+0
+91
+LIBELLE CONNAISSANCE ET EXPERIENCE
+INVB : Investisseur basique INVI : Investisseur informé INVE : Investisseur expérimenté
+92
+LIBELLE PROFIL RISQUE
+INVI : Investisseur informé
+0
+93
+LIBELLE STATUT CONTRAT
+Libellé indiquant dans quel état est le contrat (ex : Normal, Contentieux, Clos)
+0
+94
+PARTITION MOIS ANNEE

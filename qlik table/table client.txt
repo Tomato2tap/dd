@@ -1,0 +1,1292 @@
+dt_fonc
+id_cli
+cd_typ
+id_gr
+lib_gr
+cli_c_p
+nom_cplt
+cd_civ
+nom_us
+nom_pat
+prm_prn
+aut_prns
+cd_sex
+cd_situ_fam
+cd_cap_jur
+id_rl
+typ_rl
+id_cli_chrg
+typ_cli_chrg
+cd_stt_csp
+csp_cli
+lib_prof
+soc_prof
+situ_logement
+cd_siren
+dt_immat
+lieu_immat
+cd_lei
+dt_lei
+frm_jur
+cd_nace
+cd_ape
+dt_dbt_activite_1
+dt_dbt_activite_2
+dt_dbt_activite_3
+mnt_ca
+dt_maj_ca
+dt_bilan
+mnt_capital_social
+dt_maj_capital_social
+nb_salaries
+id_cli_web
+etat_acc
+nb_dev_enrol
+typ_enrol
+dt_enrol
+dt_der_cnx
+dt_maj_enrol
+num_voie
+typ_voie
+DATE FONCTIONNELLE
+Date à laquelle les données sont arrêtées
+Les données sont arrêtées fin du mois.
+1
+IDENTIFIANT CLIENT
+Identifiant client
+2
+CODE TYPE CLIENT
+Code du type de client: Personne physique (P), entreprise individuelle (E), association (A), société (S), Institution Financière (I)
+3
+IDENTIFIANT GROUPE RISQUE
+Identifiant du groupe risque du client
+4
+LIBELLE GROUPE
+Libellé du groupe risque du client
+5
+INDICATEUR RELATION COMMERCIALE
+L'indicateur de la relation client, PR = Prospect ; CL = Client ; PA = Participant ; CT = Client Technique ;
+Si la nature de la relation commerciale est "C" (Client) ET que le client n'a seulement que des produits techniques alors il sera renseigné "CT" (Client Technique). Si la nature de la relaton commerciale est "C" (Client" alors il sera renseigné "CL" (Client). Si le champs TYP (qui permet de savoir si le client est un participant ou) est "PA" (participant) alors il sera renseigné "PA". Si non, il sera renseigné "PR" (Prospect).
+6
+NOM COMPLET
+Nom complet du client (Prénoms et Noms)
+7
+CODE CIVILITE
+Code civilité du client (M. , Mme, Mlle)
+8
+NOM USUEL
+Nom usuel du client
+9
+NOM PATRONYME
+Nom patronymique du client
+10
+PRENOM CLIENT
+Prénom du client
+11
+AUTRES PRENOMS CLIENT
+Autre prénoms du client
+12
+SEXE
+Genre du client
+13
+CODE SITUATION FAMILIALE
+Code de la situation familiale du client
+14
+CODE CAPACITE JURIDIQUE
+Code de la capacité juridique du client
+15
+IDENTIFIANT REPRESENTANT LEGAL
+Identifiant du représentant légal en tant que tuteur ou curateur
+16
+TYPE REPRESENTANT LEGAL
+Type de représentant légal
+17
+IDENTIFIANTS CLIENTS EN CHARGE
+Identifiants des clients qui ont la gestion du tiers (tuteurs, président de l'entreprise, etc.)
+18
+TYPOLOGIE CLIENTS EN CHARGE
+Typologie des clients qui ont la gestion du tiers (tuteurs, président de l'entreprise, etc.)
+19
+20
+CODE CATEGORIE SOCIO PROFESSIONNELLE
+Code la catégorie socio-professionnelle du client
+1100: Agriculteur petite exploitation 1200: Agriculteur grande exploitation 1300: Agriculteur moyenne exploitation 2100: Artisan 2200: Commerçant 2300: Chef d'entreprise 3100: Profession Libérale 3300: Cadre Fonction Publique 3400: Professeur, Scientifique 3500: Profession Information, Art 3700: Cadre Administratif, Commercial d'Entreprise 3800: Ingénieur, Cadre Technique d'Entreprise 4200: Instituteur, Et Assimilés 4300: Profession Intermédiaire de Santé 4400: Clergé 4500: Profession Intermédiaire Administrative, Fonction Publique 4600: Profession Intermédiaire Administrative, Commerciale Entreprise 4700: Technicien 4800: Contremaitres, Agents de maitrise 5200: Employés civils et agents de service de la fonction publique 5300: Policiers et militaires 5400: Employés administratifs d'entreprise 5500: Employés de commerce 5600: Personnels des services directs aux particuliers 6200: Ouvriers qualifiés de type industriel 6300: Ouvriers qualifiés de type artisanal 6400: Chauffeurs 6500: Ouvriers qualifiés de la manutention, du magasinage et du transport 6700: Ouvriers non qualifiés de type industriel 6800: Ouvriers non qualifiés de type artisanal 6900: Ouvriers agricoles 7000: Retraités 8100: ChÉmeurs n'ayant jamais travaillé 8400: ElÃ?ves, étudiants 8500: Personnes diverses sans activité professionnelle 9000: Apprentis
+21
+LIBELLE DE LA PROFESSION
+Libellé de la profession
+22
+LIBELLE EMPLOYEUR
+Raison sociale de l'employeur = saisie du conseiller.
+23
+CODE SITUATION LOGEMENT
+Codifie le statut de la personne par rapport à son logement. Propriétaire, Locataire
+24
+CODE SIREN
+Code Siren si le client est une société ou a une société
+25
+DATE IMMATRICULATION SOCIETE
+Date d'immatriculation de la société auprès du RCS
+26
+LIEU IMMATRICULATION
+Lieu d'immatriculation de la société auprès du RCS
+27
+CODE LEI
+Identifiant LEI (Legal Entity Identifer) - Identifiant unique des intervenants sur les marchés financiers.
+28
+DATE ENREGISTREMENT LEI
+Date d'enregistrement du LEI (Legal Entity Identifier : Identifiant internationale d'une société)
+29
+FORME JURIDIQUE
+Forme juridique de la société
+30
+CODE NACE
+Code NACE du client si société
+31
+Code APE
+Code Activité Principale Exercée (code NAF)
+32
+DATE DE DEBUT ACTIVITE 1
+Date de début de l'activité 1 de l'entreprise
+33
+DATE DE DEBUT ACTIVITE 2
+Date de début de l'activité 2 de l'entreprise
+34
+DATE DE DEBUT ACTIVITE 3
+Date de début de l'activité 3 de l'entreprise
+35
+MONTANT CHIFFRE D'AFFAIRES
+Montant du chiffre d'affaires du client
+36
+DATE MAJ CHIFFRE D'AFFAIRES
+Date d'arrêté du dernier Chiffre d'Affaires enregistré dans Topaze
+37
+DATE BILAN
+Date d'arrêté du bilan social de l'entreprise cliente enregistré dans Topaze
+38
+MONTANT CAPITAL SOCIAL
+39
+DATE MAJ CAPITAL SOCIAL
+Date d'arrêté du dernier Capital Social enregistré dans Topaze
+40
+NOMBRE SALARIES
+41
+IDENTIFIANT CLIENT WEB
+Identifiant client web
+42
+CODE ETAT DES ACCES LOG
+Code état de l'accès (O = "ouvert", C = "clos", B = "bloqué", S = "suspendu")
+43
+NOMBRE TOTAL IDENTIFIANT TERMINAL CLIENT
+Nombre d'identifiant du terminal de confiance du client
+Le nombre total d'identifiant terminal client
+44
+TYPE ENROLLEMENT
+45
+DATE ENROLLEMENT
+46
+DATE DE DERNIERE CONNEXION
+47
+DATE MIS A JOUR DE L'ENROLLEMENT
+48
+NUMERO DE VOIE
+Numéro de voie
+49
+TYPE VOIE
+Type de voie
+
+lib_voie
+lib_voie_comp
+cd_postal
+lib_commune
+cd_commune
+pay_res
+num_voie_temp
+typ_voie_temp
+lib_voie_temp
+lib_voie_comp_temp
+cd_postal_temp
+lib_commune_temp
+cd_commune_temp
+cd_pays_temp
+cd_temp
+top_npai
+contact
+acc_cour
+acc_sms
+acc_tel
+acc_mail
+tel_port
+tel_port_pro
+pays_port
+pays_port_pro
+email
+email_pro
+lib_grp_agce
+cd_topz
+cd_sst_topz
+agc_topz
+lib_esp
+cd_ptf
+lib_ptf
+cd_cons
+nom_cons
+prm_cons
+dt_top_cl
+dt_exit_cl
+dt_dernier_rdv
+dt_1er_cnt
+cd_bh
+dt_maj_bh
+cd_rc
+cd_rc_gr
+cd_ap
+cd_fa
+cd_id
+cd_pp
+cd_pr
+LIBELLE MENTION COMPLEMENTAIRE
+Provenant de l'adresse principale. Contient les notions de bâtiment, escalier, bloc, nom de résidence, ensemble immobilier, etc.
+51
+LIBELLE VOIE COMPLEMENTAIRE
+Lieu-dit de l'adresse privilégiée. la notion de lieu-dit est celle utilisée par la poste : ex commune fusionnée avec une autre, ville nouvelle construite à côté de l'ancien village (la Plagne 2000)
+Champs égal aux données renseignées dans le libellé du lieu-dit (lib_lieu_dit). Il est utilisé pour renseigné l'adresse complète du client: si le pays de résidence du client est la France ou "non renseigné", alors on renseigne son libellé de voie complémentaire français, sinon on renseigne les données du champs libellé lieu-dit (lib_lieu_dit) qu'on renomme en champs "lib_voie_comp"
+52
+CODE POSTAL
+Code postal
+53
+LIBELLE LOCALITE
+localité de l'adresse privilégiée reconnue par la poste pour distribuer le courrier - nom de la commune - ""armées"" - nom de la commune + cedex
+54
+Code Commune
+Code commune
+55
+CODE PAYS ISO RESIDENCE
+code pays de résidence
+56
+NUMERO DE VOIE TEMPORAIRE
+Numéro de voie temporaire
+57
+TYPE VOIE TEMPORAIRE
+58
+LIBELLE VOIE TEMPORAIRE
+Libellé de voie temporaire
+59
+LIBELLE VOIE COMPLEMENTAIRE TEMPORAIRE
+Libellé de voie complémentaire temporaire
+Si le pays de résidence n'est pas France ou non renseigné, alors on renseigne le libellé du lieu dit temporaire (lib_lieu_dit_temp) dont le champs sera nommé "lib_voie_comp_temp"
+60
+CODE POSTAL TEMPORAIRE
+Code postal temporaire - paramétrage T7GDLIE
+61
+LIBELLE COMMUNE TEMPORAIRE
+Libellé communce temporaire
+62
+Code commune temporaire
+Code commune temporaire
+63
+Code pays temporaire
+Code pays temporaire
+64
+CODE USAGE ADRESSE TEMPORAIRE
+exemple : 'PR' : principale , 'TE' : temporaire. gesparam : YSP7GTAD
+65
+CODE ETAT ADRESSE
+Code Etat Adresse
+Il s'agit d'un indicateur de validité de l’adresse (appelé dans nos bases « indicateur NPAI ») qui prend les valeurs N (NPAI) ou V (valide)
+66
+CONTACT
+CANAL PRIVILEGIE CAR 1 à 50 - caractères 1 à 50 de la coordonnée du canal privilégié
+67
+CODE ACCEPTATION COURRIER
+Code acceptation réception de courrier
+Code acceptation contact par courrier. Permet de savoir si le client accepte qu'on lui envoie des courrier ou non. valeurs : O ou N
+68
+CODE ACCEPTATION SMS
+Code acceptation réception de sms
+Code acceptation contact par SMS. Permet de savoir si le client accepte qu'on lui envoie des SMS ou non.
+69
+CODE ACCEPTATION TELEPHONE
+Code acceptation réception d'appel téléphonique
+Code acceptation contact par téléphone. Permet de savoir si le client accepte qu’on le contacte par appel téléphonique ou non.
+70
+CODE ACCEPTATION MAIL
+Code acceptation réception de mail
+Code acceptation contact par téléphone. Permet de savoir si le client accepte qu’on le contacte par mail
+71
+NUMERO DE TELEPHONE PORTABLE PRIVEE
+Coordonnée téléphonique privée
+Ce champs contient le numéro de téléphone portable privée du client s'il est mentionné PO dans le code usage coordonnée telecom (CRE C7IVLT_t02004).
+72
+NUMERO DE TELEPHONE PORTABLE PROFESSIONNEL
+Coordonnée téléphonique professionnel
+Ce champs contient le numéro de téléphone portable professionnel du client s'il est mentionné PP dans le code usage coordonnée telecom (CRE C7IVLT_t02004).
+73
+PAYS DU NUMERO PORTABLE
+74
+PAYS DU NUMERO PORTABLE PROFESSIONNEL
+75
+ADRESSE MAIL PRIVEE DU CLIENT
+Adresse mail personnelle du client
+Ce champs contient le mail privée du client s'il est mentionné E1 dans le champs code usage adresse mail (C7IVLT_t02008)
+76
+ADRESSE MAIL PROFESSIONNELLE DU CLIENT
+Adresse mail professionnelle du client
+Ce champs contient le mail professionnel du client s'il est mentionné E2 dans le champs code usage adresse mail (C7IVLT_t02008)
+77
+LIBELLE GROUPE PGP
+Libellé du groupe pôle de gestion privée
+78
+CODE TOPAZE
+Code topaze - Structure privilegiée
+La structure privilégiée d’un client est la structure d’affectation du client. Un conseiller de cette caisse lui est alors rattaché. La structure privilégiée peut être différente de la structure gestionnaire (propre à chaque contrat) dès lors que le client possède des contrats dans plus d'une caisse. Elle est déterminée par un algorithme. Cette notion n’est valable que pour le périmètre ARKÉA. Dans les autres cas, BtoB par exemple, la valeur est indiquée par défaut. Dans la table T7GLPST (table des liens personne structure) de Topaze Structure, elle est identifiée par l’indicateur IDC-STR-PVL = ‘0’.
+79
+CODE TOPAZE SST
+Structure intermédiaire personne
+Structure intermédiaire, structure où le client souhaite que soient mis à disposition ses moyens de paiement (Cartes, Chéquiers). Dans bien des cas elle se confond avec la structure privilégiée du client.
+80
+LIBELLE DU PGP
+Libelle du pôle de gestion privée (anciennement agence)
+81
+LIBELLE ESPACE
+Libellé de l'espace
+Un espace étant une extension d'un PGP dans un bureau de poste
+82
+CODE MNEMONIQUE PORTEFEUILLE
+Code mnémonique du portefeuille(W => binôme)
+83
+LIBELLE PORTEFEUILLE
+INVE : Investisseur expérimenté
+84
+NUMERO DE SALARIE CONSEILLER PORTEFEUILLE
+Numéro de salarié (ou user , contient une lettre dans ce cas) du gestionnaire du portefeuille.
+85
+LIBELLE NOM CONSEILLER
+Nom du gestionnaire
+86
+LIBELLE PRENOM CONSEILLER
+Prénom du gestionnaire
+87
+DATE TOP CLIENT
+Date de début du 1er contrat souscrit lorsque le client est (re)devenu client.
+Cette donnée est trouvée en passant par différente étape: 1) Des filtres sont appliqués sur la liste client pour n'avoir que les clients qui respectent certaines conditions (les clients n'ayant que des produits techniques sont exclus, et d'autres conditions appliquées sur le "code classification personne" et "code de l'état du contrat souscrit") 2) Un second filtre sur le dernier contrat souscrit par le client le faisant passer du statut de Prospect à Client. 3) Extraction de la date de début de ce dernier contrat souscrit.
+88
+DATE SORTIE CLIENT
+Date à laquelle le client clôture tous ses contrats et devient prospect
+89
+DATE DERNIER RDV
+Date du dernier rdv fixé avec le client, qui a fait l'objet d'un compte rendu d'entretien
+Cette donnée est trouvée en passant par différentes étapes: 1) Un filtre est appliqué pour n'avoir que les dates de RDV clients fixés avant la date d'extraction des données (CRE) 2) L'extraction de la date la plus proche (la fonction max) du dernier rdv fixé avec le client 3) Les données sont stockés dans ce champs dt_dernier_rdv groupé par numéro personne (ID Client, si non "0000..." si prospect)
+90
+DATE PREMIER CONTRAT
+Date du premier contrat du client
+C'est la date du premier contrat du client, le passant de prospect à client (fonction MIN sur la date premier contrat client)
+91
+CODE ORIGINE CLIENT
+Code permettant de connaître l'origine du client, en d'autres termes, par quel biais a-t-il été orienté vers la banque et devenir client.
+C'est la donnée code origine la plus récente du client
+92
+DATE DEBUT EFFET CLASSIFICATION ORIGINE CLIENT
+Date de la classification origine client la plus récente
+0
+93
+CODE RELATION COMMERCIAL
+Code identifiant du gérant de fortune du client
+0
+94
+CODE RELATION COMMERCIAL SELON GROUPE RISQUE
+Code identifiant du gérant de fortune du client, attribué selon le groupe risque
+95
+CODE APPORTEUR
+Code identifiant la typologie de l'apporteur d'affaire (ex: AGRE | COUR - agrée courtier)
+0
+96
+97
+CODE IDENTIFICATION DE FONCTION
+Code identifiant de la fonction avec qui la banque travaille potentiellement (NOTA: Notaire, AVOC: Avocat, etc.)
+0
+98
+CODE PERSONNE PROTEGEE OU ACCOMPAGNEE
+Code identifiant l'organisme ou la personne qui protège le client dans sa gestion bancaire
+0
+99
+CODE PROSPECT
+Code identifiant l'origine de la classification du client en prospect (ANCI : ancien client, etc.)
+0
+
+cd_qb
+dt_maj_qb
+dt_fin_qb
+cd_ri
+dt_maj_ri
+cd_bp
+cd_cm
+cd_mf
+dt_maj_mf
+dt_fin_mf
+not_clt
+cd_agen
+cd_ficp
+perim_cli
+dt_topz
+dt_naiss
+dt_dc
+age_cli
+pay_naiss
+dept_naiss
+comm_naiss
+lieu_naiss_etran
+pay_nat
+dt_ref_ir
+mnt_rev_ir
+mnt_ir
+pay_fis_prin
+num_fis_prin
+crit_fis_prin
+pay_fis_2
+num_fis_2
+crit_fis_oth_2
+pay_fis_3
+num_fis_3
+crit_fis_oth_3
+pay_fis_4
+num_fis_4
+crit_fis_oth_4
+pay_fis_5
+num_fis_5
+crit_fis_oth_5
+pay_fis_6
+num_fis_6
+crit_fis_oth_6
+lib_stt_fatca
+dt_det_deb_ctr
+dt_det_fin_ctr
+dt_maj_stt
+ind_pre_exist
+ind_exonerat
+CODE QUALITE BASE
+Code qualité de la base permettant d'identifier si le tiers est habilité à être visible ou non dans la base (supp: supprimé, stop: kyc ko, inac: relation bancaire inactive, etc.)
+0
+101
+DATE CLASSIFICATION QB
+Date à laquelle la classification QB du client est entrée en vigueur
+102
+DATE FIN CLASSIFICATION QB
+Date à laquelle la classification QB du client prendra fin
+103
+CODE RISQUE CREDIT
+Code permettant de classifier le risque crédit associé au client. Lié à not_clt.
+0
+104
+DATE CLASSIFICATION RI
+Date à laquelle la classification RI du client est entrée en vigueur
+105
+CODE LIEN AVEC LA BANQUE LOBP
+Code lien identifiant le lien avec la banque Louvre Banque Privée (SBPE: salarié de la banque LoBP; NPAT: foyer non patrimoniale)
+0
+106
+CODE LIEN AVEC LA BANQUE CREDIT MUTUEL
+Code lien identifiant le lien avec la banque Crédit Mutuel (avant le rachat de la banque) (SCM: salarié de la banque crédit mutuel)
+0
+107
+CODE RISQUE CONFORMITE
+Code risque conformité identifiant les clients politquement ou économiquement exposés (ex: PPEF personne politique exposé française)
+0
+108
+DATE CLASSIFICATION MF
+Date à laquelle la classification MF du client est entrée en vigueur
+109
+DATE FIN CLASSIFICATION MF
+Date à laquelle la classification MF du client prendra fin
+110
+COTATION MAC DONOUGH
+Code permettant de mesurer le niveau de risque crédit associé au client
+C+ : le client est solvable - C- : un incident est arrivé - E: douteux, à minima 1 incident à + de 90 jours - F: contentieux avec le client
+111
+CODE ISO AGENT ECONOMIQUE
+Code permettant de catégoriser le client selon son activité économique
+NOMENCLATURE ECONOMIQUE (CF INFOS ETUDE BAFI - SURFI) La nomenclature économique de synthèse (NES), adoptée par l'Insee en 1994, est une double nomenclature nationale - d'activités économiques et de produits - agrégée, pertinente pour l'analyse économique. Les regroupements constitués sont un dénominateur commun pour la présentation des statistiques économiques agrégées (source INSEE).
+112
+CODE FICP
+Code fichier national des incidents de remboursement des crédits aux particuliers (FICP)
+113
+114
+DATE ENREGISTREMENT
+Date à laquelle la personne a été crée dans la base.
+115
+DATE NAISSANCE
+Date de naissance du client ou date de création de son entreprise
+Contenu variable selon la typologie de la personne : - Pour une personne physique, il s'agit de la date de naissance (provenant de la table PPHY) - Pour une personne morale, il s'agit de la date de création de l'établissement (provenant de la table PMOR) Attention : ce champ peut être vide notamment pour les prospects
+116
+DATE DE DECES
+Date du décès. Cette date est alimentée si la personne est taguée comme décédée.
+117
+AGE CLIENT
+L'âge du client si c'est une personne physique.
+Si dans le champs "cd_typ" est mentionné "P" , en référence à une personne physique, alors l'âge client est calculé en faisant la différence entre la date de l'extraction des données et la date de naissance du client.
+118
+CODE PAYS ISO NAISSANCE
+Code pays de naissance
+119
+CODE DEPARTEMENT NAISSANCE
+Code de département de naissance. Correspond au code officiel géographique de l'INSEE.
+120
+CODE COMMUNE NAISSANCE
+Code commune de naissance, correspond au code officiel géographique de l'INSEE.
+121
+LIEU DE NAISSANCE ETRANGER
+Ville de naissance étrangère
+122
+CODE PAYS ISO NATIONALITE
+Code du pays de nationalité
+123
+DATE REFERENCE FISCAL IMPOT REVENU
+Année fiscale de référence pour les clients imposés en IR (impôt revenu)
+124
+MONTANT REVENU IMPOSABLE
+Somme des revenus imposables du foyer fiscal
+125
+MONTANT IMPOT REVENU
+Somme de l'impôt sur le revenu payé par le foyer fiscal
+126
+PAYS FISCAL PRINCIPAL
+Le pays fiscal du client. Code pays iso2 (norme internationale de codification des pays. Elle fait partie de la norme ISO 3166) sur lequel a été détecté le critère (RUB005).
+127
+NUMERO FISCAL PRINCIPAL
+L'identifiant fiscal de référence (TIN pour FATCA et NIF pour CRS)
+128
+129
+SECOND PAYS FISCAL
+Le second pays fiscal du client
+130
+SECOND NUMERO FISCAL
+Le second numéro fiscal du client
+131
+CODE LIBELLE CRITERE FISCAL AUTRE 2
+Critère (ou indice) de détection permettant d'identifier la personne comme un résident fiscal dans un pays étranger (autre que la France). Cette personne est à déclarer auprès de ce pays, s'il est signataire de FATCA (US) ou CRS (pays de l'OCDE).
+132
+TROISIEME PAYS FISCAL
+Le troisième pays fiscal du client
+133
+TROISIEME NUMERO FISCAL
+Le troisième numéro fiscal du client
+134
+CODE LIBELLE CRITERE FISCAL AUTRE 3
+Critère (ou indice) de détection permettant d'identifier la personne comme un résident fiscal dans un pays étranger (autre que la France). Cette personne est à déclarer auprès de ce pays, s'il est signataire de FATCA (US) ou CRS (pays de l'OCDE).
+135
+QUATRIEME PAYS FISCAL
+Le quatrième pays fiscal du client
+136
+QUATRIEME NUMERO FISCAL
+Le quatrième numéro fiscal du client
+137
+CODE LIBELLE CRITERE FISCAL AUTRE 4
+Critère (ou indice) de détection permettant d'identifier la personne comme un résident fiscal dans un pays étranger (autre que la France). Cette personne est à déclarer auprès de ce pays, s'il est signataire de FATCA (US) ou CRS (pays de l'OCDE).
+138
+CINQUIEME PAYS FISCAL
+Le cinquième pays fiscal du client
+139
+CINQUIEME NUMERO FISCAL
+Le cinquième numéro fiscal du client
+140
+CODE LIBELLE CRITERE FISCAL AUTRE 5
+Critère (ou indice) de détection permettant d'identifier la personne comme un résident fiscal dans un pays étranger (autre que la France). Cette personne est à déclarer auprès de ce pays, s'il est signataire de FATCA (US) ou CRS (pays de l'OCDE).
+141
+SIXIEME PAYS FISCAL
+Le sixième pays fiscal du client
+142
+SIXIEME NUMERO FISCAL
+Le sixième numéro fiscal du client
+143
+CODE LIBELLE CRITERE FISCAL AUTRE 6
+Critère (ou indice) de détection permettant d'identifier la personne comme un résident fiscal dans un pays étranger (autre que la France). Cette personne est à déclarer auprès de ce pays, s'il est signataire de FATCA (US) ou CRS (pays de l'OCDE).
+144
+LIBELLE STATUT FATCA
+Libellé du code statut du critère
+145
+DATE DE DETECTION DU CRITERE
+Date de détection du critère ou indice (RUB005) Plusieurs critères ou indices de résidence fiscale à l'étranger existent. ex : un critère C1 est attribué à la personne si elle a un pays de nationalité <> France (étranger).
+146
+DATE DE DETECTION FIN CRITERE
+Date de fin de détection du critère ou indice (RUB005). Certains critères peuvent avoir une date de fin (ex : critère C5 : Numéro de téléphone étranger), d'autres non (ex : critère C2 : pays de naissance étranger). Par défaut renseigné à 31/12/9999.
+147
+DATE MISE A JOUR STATUT
+Date de mise à jour du statut
+148
+INDICATEUR PREEXISTANT
+Indicateur de Préexistance dans le SI
+149
+INDICATEUR EXONERATION
+Indicateur d'exoneration fiscale
+
+cd_act_ori
+cd_stt
+nb_id_rtg
+id_rtg_grp
+id_rtg_lbp
+id_fo
+lib_fo
+nb_act
+tx_act_tot
+dt_deb_eff_act_1
+id_act_1
+tx_cap_act_1
+dt_deb_eff_act_2
+id_act_2
+tx_cap_act_2
+dt_deb_eff_act_3
+id_act_3
+tx_cap_act_3
+dt_deb_eff_act_4
+id_act_4
+tx_cap_act_4
+dt_deb_eff_act_5
+id_act_5
+tx_cap_act_5
+dt_deb_eff_act_6
+id_act_6
+tx_cap_act_6
+dt_deb_eff_act_7
+id_act_7
+tx_cap_act_7
+dt_deb_eff_act_8
+id_act_8
+tx_cap_act_8
+dt_deb_eff_act_9
+id_act_9
+tx_cap_act_9
+dt_deb_eff_act_10
+id_act_10
+tx_cap_act_10
+nb_bene
+tx_bene_tot
+dt_deb_eff_bene_1
+id_bene_1
+tx_cap_bene_1
+dt_deb_eff_bene_2
+id_bene_2
+tx_cap_bene_2
+dt_deb_eff_bene_3
+id_bene_3
+tx_cap_bene_3
+Code activité origine
+151
+CODE STATUT
+152
+NOMBRE ID RTG
+Nombre d'ID client LBP que possède un client LoBP
+153
+LISTE ID LOBP GROUPE
+Liste des numéros ID LoBP Groupe pour un client LoBP Local
+154
+LISTE ID LBP LOCAL
+Liste des numéros ID LBP Local pour un client LoBP Local
+155
+156
+157
+NOMBRE ACTIONNAIRES
+Nombre d'actionnaire dans la société
+158
+TAUX ACTIONS TOTAL
+Pourcentage total détenu sur le capital
+C'est la somme des pourcentages détenu sur le capital
+159
+DATE DEBUT EFFET 1ER ACTIONNAIRE
+Date début à laquelle le premier actionnaire a acquis sa part d'action
+160
+ID PREMIER ACTIONNAIRE
+Numéro personne du premier actionnaire
+ID Client de l'actionnaire
+161
+TAUX ACTONS PREMIER ACTIONNAIRE
+C'est le taux des actions du premier actionnaire
+162
+DATE DEBUT EFFET SECOND ACTIONNAIRE
+Date début à laquelle le second actionnaire a acquis sa part d'action
+163
+ID SECOND ACTIONNAIRE
+Numéro personne du second actionnaire
+164
+TAUX ACTONS SECOND ACTIONNAIRE
+C'est le taux des actions du second actionnaire
+165
+DATE DEBUT EFFET TROISIEME ACTIONNAIRE
+Date début à laquelle le troisième actionnaire a acquis sa part d'action
+166
+ID TROISIEME ACTIONNAIRE
+Numéro personne du troisième actionnaire
+167
+TAUX ACTONS TROISIEME ACTIONNAIRE
+C'est le taux des actions du troisième actionnaire
+168
+DATE DEBUT EFFET QUATRIEME ACTIONNAIRE
+Date début à laquelle le quatrième actionnaire a acquis sa part d'action
+169
+ID QUATRIEME ACTIONNAIRE
+Numéro personne du quatrième actionnaire
+170
+TAUX ACTONS QUATRIEME ACTIONNAIRE
+C'est le taux des actions du quatrième actionnaire
+171
+DATE DEBUT EFFET CINQUIEME ACTIONNAIRE
+Date début à laquelle le cinquième actionnaire a acquis sa part d'action
+172
+ID CINQUIEME ACTIONNAIRE
+Numéro personne du cinquième actionnaire
+173
+TAUX ACTONS CINQUIEME ACTIONNAIRE
+C'est le taux des actions du cinquième actionnaire
+174
+DATE DEBUT EFFET SIXIEME ACTIONNAIRE
+Date début à laquelle le sixième actionnaire a acquis sa part d'action
+175
+ID SIXIEME ACTIONNAIRE
+Numéro personne du sixième actionnaire
+176
+TAUX ACTONS SIXIEME ACTIONNAIRE
+C'est le taux des actions du sixième actionnaire
+177
+DATE DEBUT EFFET SEPTIEME ACTIONNAIRE
+Date début à laquelle le septième actionnaire a acquis sa part d'action
+178
+ID SEPTIEME ACTIONNAIRE
+Numéro personne du septième actionnaire
+179
+TAUX ACTONS SEPTIEME ACTIONNAIRE
+C'est le taux des actions du septième actionnaire
+180
+DATE DEBUT EFFET HUITIEME ACTIONNAIRE
+Date début à laquelle le huitième actionnaire a acquis sa part d'action
+181
+ID HUITIEME ACTIONNAIRE
+Numéro personne du huitième actionnaire
+182
+TAUX ACTONS HUITIEME ACTIONNAIRE
+C'est le taux des actions du huitième actionnaire
+183
+DATE DEBUT EFFET NEUVIEME ACTIONNAIRE
+Date début à laquelle le neuvième actionnaire a acquis sa part d'action
+184
+ID NEUVIEME ACTIONNAIRE
+Numéro personne du neuvième actionnaire
+185
+TAUX ACTONS NEUVIEME ACTIONNAIRE
+C'est le taux des actions du neuvième actionnaire
+186
+DATE DEBUT EFFET DIXIEME ACTIONNAIRE
+Date début à laquelle le dixième actionnaire a acquis sa part d'action
+187
+ID DIXIEME ACTIONNAIRE
+Numéro personne du dixième actionnaire
+188
+TAUX ACTONS DIXIEME ACTIONNAIRE
+C'est le taux des actions du dixième actionnaire
+189
+NOMBRE BENEFICIAIRE
+Nombre de bénéficiaire
+190
+TAUX BENEFICES TOTAL
+Pourcentage détenu sur le capital
+191
+DATE DEBUT EFFET 1ER BENEFICIAIRE
+Date début à laquelle le client devient bénéficiaire
+192
+ID PREMIER BENEFICIAIRE
+ID client du premier bénéficiaire
+193
+TAUX DE CAPITAL PREMIER BENEFICIAIRE
+Pourcentage détenu sur le capital du premier bénéficiaire
+194
+DATE DEBUT EFFET SECOND BENEFICIAIRE
+Date début à laquelle le client devient bénéficiaire
+195
+ID SECOND BENEFICIAIRE
+ID client du second bénéficiaire
+196
+TAUX DE CAPITAL SECOND BENEFICIAIRE
+Pourcentage détenu sur le capital du second bénéficiaire
+197
+DATE DEBUT EFFET TROISIEME BENEFICIAIRE
+Date début à laquelle le client devient bénéficiaire
+198
+ID TROISIEME BENEFICIAIRE
+ID client du troisième bénéficiaire
+199
+TAUX DE CAPITAL TROISIEME BENEFICIAIRE
+Pourcentage détenu sur le capital du troisième bénéficiaire
+
+dt_deb_eff_bene_4
+id_bene_4
+tx_cap_bene_4
+dt_deb_eff_bene_5
+id_bene_5
+tx_cap_bene_5
+gelule_global
+kyc_idt
+kyc_adr
+kyc_cer
+kyc_don_idt
+kyc_jus_rpm
+kyc_don_nai
+kyc_jus_jug
+kyc_jus_tut
+kyc_don_cju
+kyc_don_fml
+kyc_don_prf
+kyc_don_act
+kyc_don_bnf
+kyc_don_eco
+kyc_don_fis
+kyc_don_jur
+kyc_don_mdc
+kyc_don_rpl
+cd_risque_pers
+cd_risque_ajust
+dt_deb_ris_ajust
+dt_fin_ris_ajust
+tot_score_risque
+nb_crit_risque
+scenario_risque
+lib_scenario_risque
+dt_der_certif
+dt_next_certif
+nb_incidents_ficp
+nb_etablissement_declarant_ficp
+cd_fraude_identite_ficp
+dt_eff_ficp
+dt_fin_eff_ficp
+cd_ib
+ori_cd_ib
+dt_maj_ib
+ged_lsb
+ged_acf
+ged_jus_idt
+ged_jus_adr
+ged_jus_rev
+ged_form_kyc
+ged_descriptif_patrimonial
+DATE DEBUT EFFET QUATRIEME BENEFICIAIRE
+Date début à laquelle le client devient bénéficiaire
+201
+ID QUATRIEME BENEFICIAIRE
+ID client du quatrième bénéficiaire
+202
+TAUX DE CAPITAL QUATRIEME BENEFICIAIRE
+Pourcentage détenu sur le capital du quatrième bénéficiaire
+203
+DATE DEBUT EFFET CINQUIEME BENEFICIAIRE
+Date début à laquelle le client devient bénéficiaire
+204
+ID CINQUIEME BENEFICIAIRE
+ID client du cinquième bénéficiaire
+205
+TAUX DE CAPITAL CINQUIEME BENEFICIAIRE
+Pourcentage détenu sur le capital du cinquième bénéficiaire
+206
+GELLULE GLOBAL
+Code regroupant toutes les sous catégorie gellule selon la KYC (couleur de la gellule = la valeur la plus négative)
+Ex : 0 = couleur vert (donnée conforme ) 5 = couleur orange (donnée à mettre à jour mais facultative ) 10 = couleur rouge (donnée à mettre à jour obligatoirement )
+207
+QUALITE CONNAISSANCE CLIENT IDENTITE
+Code qualité correspondant à la couleur selon la KYC de l'identité du client
+208
+QUALITE CONNAISSANCE CLIENT ADRESSE
+Code qualité correspondant à la couleur selon la KYC de l'adresse du client
+209
+QUALITE CONNAISSANCE CERTIFICATION
+Code qualité correspondant à la couleur selon la KYC de la certification (en référence au contrôle du banquier privée)
+210
+QUALITE CONNAISSANCE CLIENT IDENTITE PERSONNE PHYSIQUE
+Code qualité correspondant à la couleur selon la KYC de l'identité de la personne physique
+211
+QUALITE CONNAISSANCE CLIENT REPRESENTANT MINEUR
+Code qualité correspondant à la couleur selon la KYC du représentant mineur
+212
+QUALITE CONNAISSANCE CLIENT DONNEE NAISSANCE
+Code qualité correspondant à la couleur selon la KYC des informations de naissance de la personne physique
+213
+QUALITE CONNAISSANCE JUSTIFICATIF DE JUGEMENT
+Code qualité correspondant à la couleur selon la KYC de la curatelle
+214
+QUALITE CONNAISSANCE JUSTIFICATIF TUTELLE
+Code qualité correspondant à la couleur selon la KYC de la tutelle
+215
+QUALITE CONNAISSANCE CAPACITE JURIDIQUE
+Code qualité permettant de connaitre la capacité juridique du client (majeur capable, sous tutelle, etc.)
+216
+QUALITE CONNAISSANCE DONNEE SITUATION FAMILIALE
+Code qualité permettant de connaitre la situation familiale du client (marié, pacsé, etc. avec le régime adopté)
+217
+QUALITE CONNAISSANCE PROFESSION
+Code qualité correspondant à la couleur selon la KYC des informations sur la profession
+218
+QUALITE CONNAISSANCE ACTIONNAIRE
+Code qualité correspondant à la couleur selon la KYC des actionnaires
+219
+QUALITE CONNAISSANCE BENEFICIAIRE EFFECTIF
+Code qualité correspondant à la couleur selon la KYC du bénéficiaire effectif
+220
+QUALITE CONNAISSANCE DONNEE ECONOMIQUE
+Code qualité correspondant à la couleur selon la KYC de la donnée économique
+221
+QUALITE CONNAISSANCE DONNEE FISCALE
+Code qualité correspondant à la couleur selon la KYC de la donnée fiscale
+222
+QUALITE CONNAISSANE DONNEE JURIDIQUE
+Code qualité correspondant à la couleur selon la KYC de la donnée juridique
+223
+QUALITE CONNAISSANCE DONNEE MANDATAIRE
+Code qualité correspondant à la couleur selon la KYC de la donnée mandataire
+224
+QUALITE DONNEE REPRESENTANT LEGAL SOCIETE
+Code qualité correspondant à la couleur selon la KYC du représentant légale société
+225
+CODE RISQUE PERSONNE
+Le code mentionné indique le niveau de risque calculé
+226
+CODE RISQUE AJUSTE
+Le code mentionné indique le niveau de risque ajusté
+227
+DATE DEBUT RISQUE AJUSTE
+Date de début d'application du risque ajusté LCBFT (Lutte Contre le Blanchiment et le Financement Terroriste) Le risque calculé par l'application peut être ajusté manuellement par un expert, on l'appelle alors le risque ajusté
+228
+DATE FIN RISQUE AJUSTE
+Date de fin d'application du risque ajusté LCBFT (Lutte Contre le Blanchiment et le Financement Terroriste) Le risque calculé par l'application peut être ajusté manuellement par un expert, on l'appelle alors le risque ajusté
+229
+230
+231
+232
+233
+DATE DE DERNIERE CERTIFICATION
+234
+DATE DE LA PROCHAINE CERTIFICATION
+235
+NOMBRE INCIDENTS FICP
+Nombre incidents inscrits au FICP pour la personne physique
+236
+NOMBRE ETABLISSEMENTS DECLARANTS
+Nombre d'établissements déclarants FICP pour la créance concernée.
+237
+CODE FRAUDE IDENTITE FICP
+Code fichier national des incidents de remboursement des crédits aux particuliers (FICP) sur la fraude identité
+238
+DATE MISE A JOUR STATUT
+Date de mise à jour du statut (T02-010)
+239
+CODE STATUT
+Code du statut du critère. I : tout juste Identifié par nos traitements (un courrier est alors envoyé au client pour certifier l'information) 8 : le client n'a pas confirmé l'information (en le justifiant par retour de courrier d'auto certification avec pièces justificatives) 9 : le client a confirmé l'information (en le justifiant par retour de courrier d'auto certification avec pièces justificatives) R : le client n'a pas répondu au courrier au bout de 90 jours. Nous le considérons Récalcitrant. C : le client n'a pas répondu au courrier au bout de 134 jours. Nous le considérons Récalcitrant au sens reporting. X : critère annulé
+240
+241
+242
+243
+GESTION ELECTRONIQUE DOCUMENT LEVEE SECRET BANCAIRE
+Si renseigné LSB dans ce champs alors nous avons bien les documents justifiants de l'autorisation à la levée du secret bancaire
+244
+GESTION ELECTRONIQUE DOCUMENT AUTO CERTIFICATION FISCALE
+245
+GESTION ELECTRONIQUE DOCUMENT JUSTIFICATIF IDENTITE
+246
+GED JUSTIFICATIF ADRESSE
+Top indiquant la présence d'un justificatif d'adresse enregistré en GED
+247
+248
+GESTION ELECTRONIQUE FORMULAIRE KYC
+
+ged_bilan_patrimonial
+dt_maj_rev
+mnt_rev_princ
+mnt_rev_fonc
+mnt_pat_biens_immos
+mnt_chg_externes
+mnt_pat_epargne
+mnt_credits_externes
+perim_fo
+aum_tit_fo
+promesse
+mnt_equip_emp
+nb_equip_emp
+mnt_equip_coe
+nb_equip_coe
+mnt_equip_cau
+nb_equip_cau
+mnt_equip_tit
+nb_equip_tit
+mnt_equip_cot
+nb_equip_cot
+mnt_equip_rep
+nb_equip_rep
+mnt_equip_man
+nb_equip_man
+mnt_equip_sou
+nb_equip_sou
+dt_maj_equip_lbp
+mnt_equip_lbp_emp
+mnt_equip_lbp_tit
+list_pdt_lbp
+aum_tit
+aum_cot
+list_fam_pdt
+list_pdt
+list_pdt_princ
+list_pdt_sec
+mnt_fcmm
+top_client_actif
+stt_app
+id_siroc_app
+id_rhapp
+cd_regat_app
+cd_bgp
+libelle_bgp
+code_dt
+libelle_dt
+code_dex
+libelle_dex
+code_ddr
+251
+DATE MISE A JOUR REVENU
+Date à laquelle la valeur a été actualisé
+252
+MONTANT REVENUS PRINCIPAUX MENSUEL
+Montant mensuel des revenus principaux excluant les revenus fonciers (loyers reçu, revenu foncier, revenu mobilier)
+253
+MONTANT MENSUEL REVENUS FONCIERS
+Montant mensuel des revenus fonciers
+254
+MONTANT PATRIMOINE BIENS IMMOBILIERS
+255
+MONTANT CHARGES EXTERNES
+256
+MONTANT PATRIMOINE EPARGNE
+257
+MONTANT CREDITS EXTERNES
+258
+259
+260
+261
+MONTANT CONTRAT SOUSCRIT EMPRUNTEUR
+Montant des contrats souscrits en tant qu'emprunteur
+262
+NOMBRE CONTRAT SOUSCRIT EMPRUNTEUR
+Nombre de contrats souscrits en tant qu'emprunteur
+263
+MONTANT CONTRAT SOUSCRIT COEMPRUNTEUR
+Montant des contrats souscrits en tant que coemprunteur
+264
+NOMBRE CONTRAT SOUSCRIT COEMPRUNTEUR
+Nombre de contrat souscrit en tant que coemprunteur
+265
+MONTANT CONTRAT SOUSCRIT CAUTIONNAIRE
+Montant des contrats en tant que cautionnaire
+266
+NOMBRE CONTRAT SOUSCRIT CAUTIONNAIRE
+Nombre de contrat souscrit en tant que cautionnaire
+267
+MONTANT CONTRAT SOUSCRIT TITULAIRE
+Montant des contrats souscrits en tant que titulaire
+268
+NOMBRE CONTRAT SOUSCRIT TITULAIRE
+Nombre de contrat souscrit en tant que titulaire
+269
+MONTANT CONTRAT SOUSCRIT COTITULAIRE
+Montant des contrats souscrits en tant que cotitulaire
+270
+NOMBRE CONTRAT SOUSCRIT COTITULAIRE
+Nombre de contrat souscrit en tant que cotitulaire
+271
+MONTANT CONTRAT SOUSCRIT REPRESENTANT LEGAL
+Montant des contrats en tant que représentant légal
+272
+NOMBRE CONTRAT SOUSCRIT REPRESENTANT LEGAL
+Nombre de contrat en tant que représentant légal
+273
+MONTANT CONTRAT SOUSCRIT MANDATAIRE
+Montant des contrats en tant que mandataire
+274
+NOMBRE CONTRAT SOUSCRIT MANDATAIRE
+Nombre de contrat en tant que mandataire
+275
+MONTANT CONTRAT SOUSCRIPTEUR
+Montant des contrats du souscripteur
+276
+NOMBRE CONTRAT SOUSCRIT SOUSCRIPTEUR
+Nombre de contrats du souscripteur
+277
+278
+MONTANT EQUIPEMENT LBP EMPRUNTEUR
+Montant des crédits accordés par LBP pour les clients bi-bancarisés
+279
+MONTANT EQUIPEMENT LBP TITULAIRE
+Montant des contrats d'épargne détenus chez LBP par les clients bi-bancarisés
+280
+281
+AUM du Titulaire
+AuM du Titulaire
+282
+AUM du Cotitulaire
+AuM du Cotitulaire
+283
+LISTES FAMILLES PRODUIT
+Liste des familles de produit détenues par le client
+284
+LISTE PRODUITS
+Liste des produits détenus par le client
+285
+LISTE PRODUITS PRINCIPAUX
+Liste des produits détenus par le client en tant que titulaire, emprunteur ou souscripteur
+286
+LISTE PRODUITS SECONDAIRES
+Liste des produits détenus par le client en tant que co-titulaire ou co-emprunteur
+287
+MONTANT DE LA MEDIANE MAX CREDIT SUR LES 12 DERNIERS MOIS
+Avoir la médiane du maximum du crédit d'un compte sur les 12 derniers mois. En d'autres termes c'est la médiane du max revenus positifs mensuels sur les 12 derniers mois du client (ou depuis la création de son compte si le compte a été ouvert après)
+288
+TOP CLIENT ACTIF
+Client actif : O ou N O si + de 9 mouvements (PP) ou + 4 mouvements (PM), mouvement crédit et débit, sur au moins 10 mois sur les 12 derniers mois.
+289
+290
+IDENTIFIANT SIROCCO
+Identifiant Sirocco du client bi-bancarisé saisi dans l'outil d'apport
+291
+IDENTIFIANT RH DE L'APPORTEUR
+Identifiant RH de l'apporteur du client bi-bancarisé saisi dans l'outil d'apport
+292
+CODE REGATE APPORTEUR
+Code regate de l'apporteur du client bi-bancarisé saisi dans l'outil d'apport
+293
+CODE BUREAU DE GESTION POSTALE
+Identifiant du secteur la Banque Postale pour les clients bi-bancarisés
+294
+LIBELLE BUREAU DE GESTION POSTALE
+Libellé du secteur la Banque Postale pour les clients bi-bancarisés
+295
+CODE DT
+Code Direction Territoriale la Banque Postale pour les clients bi-bancarisés
+296
+LIBELLE DT
+Libellé Direction Territoriale la Banque Postale pour les clients bi-bancarisés
+297
+CODE DEX
+Code Direction Exécutive la Banque Postale pour les clients bi-bancarisés
+298
+LIBELLE DEX
+Libellé Direction Exécutive la Banque Postale pour les clients bi-bancarisés
+299
+CODE DDR
+Code Direction Régionale la Banque Postale pour les clients bi-bancarisés
+
+libelle_ddr
+lib_cd_agen
+lib_cd_bh
+lib_cd_cap_jur
+lib_cd_civ
+lib_cd_nace
+lib_cd_pays_temp
+lib_cd_risque_ajust
+lib_cd_risque_pers
+lib_cd_situ_fam
+lib_cd_stt_csp
+lib_cd_typ
+lib_csp_cli
+lib_frm_jur
+lib_gelule_global
+lib_pay_res
+cd_devise_pays
+cd_devise_pays_num
+couleur_pays
+niveau_risque_pays
+top_pays_eai
+top_pays_embargo
+top_pays_etnc
+top_pays_eu
+top_pays_gafi
+top_pays_gda
+top_pays_pthr
+top_pays_sanctions
+lib_top_npai
+annee_mois_part
+LIBELLE DDR
+Libellé Direction Régionale la Banque Postale pour les clients bi-bancarisés
+301
+LIBELLE CODE ISO AGENT ECONOMIQUE
+Libellé du code ISO Agent Economique
+302
+LIBELLE CODE ORIGINE CLIENT
+Libellé du code origine du client
+303
+LIBELLE CODE CAPACITE JURIDIQUE
+Libellé code capacité juridique
+304
+LIBELLE CODE CIVILITE DU CLIENT
+Libellé code civilité du client
+305
+LIBELLE CODE NACE
+Libellé code NACE du client si société
+306
+LIBELLE DU PAYS TEMPORAIRE
+307
+LIBELLE CODE RISQUE AJUSTEE
+Libellé du code risque ajustée
+308
+LIBELLE CODE RISQUE PERSONNE
+Libellé code risque personne
+309
+LIBELLE CODE SITUATION FAMILIALE
+Libellé code situation familiale
+310
+311
+LIBELLE CODE TYPE CLIENT
+Libellé code type client
+312
+LIBELLE CODE CATEGORIE SOCIO PROFESSIONNELLE
+Libellé code catégorie socio professionnelle
+313
+LIBELLE FORME JURIDIQUE
+Libellé forme juridique si société
+314
+LIBELLE GELLULE GLOBAL
+Libellé gellule global
+315
+LIBELLE PAYS RESIDENCE
+Libellé pays de résidence
+316
+Code devise pays
+Code devise pays
+317
+CODE DEVISE PAYS NUMERO
+Devise du pays sous format numérique
+318
+COULEURS PAYS
+Couleurs pays pour la conformité (vert, orange, rouge, noir)
+319
+NIVEAU RISQUE DU PAYS
+320
+TOP PAYS EAI
+Indication de l'appartenance d'un pays à l'Echange Automatique des Informations fiscales
+321
+TOP PAYS EMBARGO
+Indication de la présence d'un embargo
+322
+TOP PAYS ETNC
+Indication de la présence d'un pays à la liste des pays et territoires non coopératifs
+323
+TOP PAYS EU
+Indication de l'appartenance d'un pays de l'Union Européenne
+324
+TOP PAYS GAFI
+Indication de l'appartenance d'un pays au Groupe d'Action Financière
+325
+TOP PAYS GDA
+Indication de la présence d'un pays à la liste des pays sous sanction Gel Des Avoirs
+326
+TOP PAYS PTHR
+Indication de l'appartenance d'un pays à une liste des Pays à Très Haut Risque (fiscale)
+327
+TOP PAYS SANCTIONS
+Indication de la présence d'un pays à la liste des pays sous sanction (tous types)
+328
+LIBELLE CODE ETAT ADRESSE
+Libellé code état adresse
+329
+PARTITION MOIS ANNEE
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maquette Qlik / Power BI - Banque Privée</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: #f2f1ef;
+      color: #24201c;
+      padding: 24px;
+    }
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      gap: 24px;
+    }
+    .hero {
+      background: linear-gradient(180deg, #472f2a 0%, #1d1411 100%);
+      border-radius: 28px;
+      padding: 32px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 140px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      opacity: 0.88;
+      max-width: 620px;
+    }
+    .hero .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .section {
+      display: grid;
+      gap: 20px;
+      background: #fff;
+      border-radius: 24px;
+      padding: 24px;
+      border: 1px solid #e3ded9;
+      box-shadow: 0 20px 45px rgba(30, 20, 15, 0.08);
+    }
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .section-title h2 {
+      font-size: 22px;
+      color: #2a1f1b;
+    }
+    .section-title span {
+      color: #8b6d60;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .kpi-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .kpi {
+      background: #fff6f1;
+      border: 1px solid #ebd7cc;
+      border-radius: 18px;
+      padding: 18px;
+      display: grid;
+      gap: 10px;
+    }
+    .kpi .label {
+      color: #8b6d60;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .kpi .value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #3b231f;
+    }
+    .kpi .hint {
+      font-size: 12px;
+      color: #7d6258;
+      opacity: 0.9;
+    }
+    .grid-2 {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 2fr 1fr;
+    }
+    .chart-card {
+      background: #faf6f2;
+      border-radius: 22px;
+      border: 1px solid #eadcd4;
+      padding: 22px;
+      display: grid;
+      gap: 16px;
+    }
+    .chart-card .title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3b231f;
+    }
+    .placeholder {
+      min-height: 180px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f2e7e0 0%, #e9ded8 100%);
+      display: grid;
+      place-items: center;
+      color: #7d6258;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+    .product-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid #e5dbd4;
+      padding: 20px;
+      display: grid;
+      gap: 12px;
+    }
+    .product-card .name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3b231f;
+    }
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
+      color: #7d6258;
+    }
+    .product-row strong {
+      color: #2a1f1b;
+      font-weight: 700;
+    }
+    .insight-box {
+      background: #f8f1eb;
+      border-radius: 20px;
+      border: 1px solid #e3d2c8;
+      padding: 20px;
+      display: grid;
+      gap: 12px;
+    }
+    .insight-box h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+      color: #3b231f;
+    }
+    .insight-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
+      color: #7d6258;
+    }
+    .insight-line strong {
+      color: #2a1f1b;
+    }
+    @media (max-width: 1000px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <div>
+        <div class="badge">Banque Privée | Vue Qlik / Power BI</div>
+        <h1>Adoption digitale et portefeuille produits</h1>
+        <p>Maquette basée sur les thèmes existants des anciens PDF, avec une plus-value opérationnelle pour un futur basculement Power BI.</p>
+      </div>
+      <div class="badge">Mise à jour : 29/05/2026</div>
+    </div>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>1. Adoption digitale</h2>
+        <span>Digital Banking</span>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="label">Clients totaux</div><div class="value">77 991</div><div class="hint">Base clientèle</div></div>
+        <div class="kpi"><div class="label">Clients enrôlés</div><div class="value">20 893</div><div class="hint">Adoption mobile</div></div>
+        <div class="kpi"><div class="label">Smartphones enrôlés</div><div class="value">21 187</div><div class="hint">Activation mobile</div></div>
+        <div class="kpi"><div class="label">Engagement digital</div><div class="value">78%</div><div class="hint">Taux d’usage actif</div></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="title">Connexions par canal</div>
+          <div class="placeholder">Graphique ligne : Web, Mobile, iOS, Android</div>
+        </div>
+        <div class="insight-box">
+          <h3>Insights digitaux</h3>
+          <div class="insight-line"><span>Web vs Mobile</span><strong>44% / 56%</strong></div>
+          <div class="insight-line"><span>Rétention 30j</span><strong>72%</strong></div>
+          <div class="insight-line"><span>Clients à risque churn</span><strong>1 860</strong></div>
+          <div class="insight-line"><span>Canal prioritaire</span><strong>Mobile</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>2. Portefeuille produits</h2>
+        <span>Produits bancaires</span>
+      </div>
+      <div class="product-grid">
+        <div class="product-card"><div class="name">Cartes</div><div class="product-row"><span>Nb cartes</span><strong>16 166</strong></div><div class="product-row"><span>Immatriculations</span><strong>6 877</strong></div><div class="product-row"><span>Montant moyen</span><strong>3 120€</strong></div></div>
+        <div class="product-card"><div class="name">Virements</div><div class="product-row"><span>Volume total</span><strong>348 640€</strong></div><div class="product-row"><span>Web</span><strong>186 586€</strong></div><div class="product-row"><span>Mobile</span><strong>142 089€</strong></div></div>
+        <div class="product-card"><div class="name">Comptes</div><div class="product-row"><span>Nb comptes</span><strong>68 831</strong></div><div class="product-row"><span>Encours</span><strong>711 435,15 KC</strong></div><div class="product-row"><span>Comptes actifs</span><strong>84%</strong></div></div>
+        <div class="product-card"><div class="name">Épargne</div><div class="product-row"><span>Contrats</span><strong>25 529</strong></div><div class="product-row"><span>Encours</span><strong>358 041,26 KC</strong></div><div class="product-row"><span>Collecte nette</span><strong>+9,4 M€</strong></div></div>
+        <div class="product-card"><div class="name">Crédits</div><div class="product-row"><span>Immobilier</span><strong>12 001</strong></div><div class="product-row"><span>Conso</span><strong>484</strong></div><div class="product-row"><span>Bucket IFRS9</span><strong>B2</strong></div></div>
+        <div class="product-card"><div class="name">Assurance</div><div class="product-row"><span>Contrats</span><strong>21 045</strong></div><div class="product-row"><span>Portefeuille</span><strong>2 193,99 M€</strong></div><div class="product-row"><span>Renouvellement</span><strong>92%</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>3. Tendances & opportunités</h2>
+        <span>Engagement / Performance</span>
+      </div>
+      <div class="grid-2">
+        <div class="chart-card"><div class="title">Activité quotidienne</div><div class="placeholder">Graphique ligne : volume quotidien de connexions</div></div>
+        <div class="chart-card"><div class="title">Priorités produit</div><div class="placeholder">Diagramme : produits à fort potentiel</div></div>
+      </div>
+      <div class="chart-card">
+        <div class="title">Opportunités & recommandations</div>
+        <div class="placeholder">Analyse de la performance produit et des clients à cibler</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
